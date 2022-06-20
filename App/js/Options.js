@@ -128,6 +128,16 @@ xui.Class('App.Options', 'xui.Module',{
                         "disabled" : true
                     }
                 ])
+                .onClick([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "control",
+                        "target" : "xui_ui_list108",
+                        "args" : [ ],
+                        "method" : "show",
+                        "event" : 1
+                    }
+                ])
             );
             
             append(
