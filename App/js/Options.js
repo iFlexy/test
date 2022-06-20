@@ -96,6 +96,40 @@ xui.Class('App.Options', 'xui.Module',{
                 .setLabelCaption("Inguinal Ligament Location")
             );
             
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput364")
+                .setLeft("5.333333333333333em")
+                .setTop("22.666666666666668em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Drop List Input")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "item 1",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "item 2",
+                        "imageClass" : "xui-icon-number2"
+                    },
+                    {
+                        "id" : "c",
+                        "caption" : "item 3",
+                        "imageClass" : "xui-icon-number3"
+                    },
+                    {
+                        "id" : "d",
+                        "caption" : "item 4",
+                        "imageClass" : "xui-icon-number4",
+                        "disabled" : true
+                    }
+                ])
+            );
+            
             append(
                 xui.create("xui.UI.List")
                 .setHost(host,"xui_ui_list22")
@@ -290,6 +324,66 @@ xui.Class('App.Options', 'xui.Module',{
                         "desc" : "hide self",
                         "type" : "control",
                         "target" : "xui_ui_list81",
+                        "args" : [ ],
+                        "method" : "hide"
+                    }
+                ])
+            );
+            
+            append(
+                xui.create("xui.UI.List")
+                .setHost(host,"xui_ui_list108")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "5 Fr",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "6 Fr",
+                        "imageClass" : "xui-icon-number2"
+                    },
+                    {
+                        "id" : "c",
+                        "caption" : "7 Fr",
+                        "imageClass" : "xui-icon-number3"
+                    },
+                    {
+                        "id" : "d",
+                        "caption" : "8 Fr",
+                        "imageClass" : "xui-icon-number4"
+                    },
+                    {
+                        "id" : "e",
+                        "caption" : "> 8 Fr",
+                        "imageClass" : "xui-icon-number5"
+                    }
+                ])
+                .setLeft("13.266666666666667em")
+                .setTop("23.933333333333334em")
+                .setHeight("11em")
+                .setVisibility("visible")
+                .setValue("a")
+                .onItemSelected([
+                    {
+                        "desc" : "set value",
+                        "type" : "control",
+                        "target" : "xui_ui_comboinput364",
+                        "args" : [
+                            "{page.xui_ui_comboinput364.setUIValue()}",
+                            undefined,
+                            undefined,
+                            "{args[1]caption}"
+                        ],
+                        "method" : "setUIValue",
+                        "event" : 2,
+                        "redirection" : "other:callback:call"
+                    },
+                    {
+                        "desc" : "hide self",
+                        "type" : "control",
+                        "target" : "xui_ui_list108",
                         "args" : [ ],
                         "method" : "hide"
                     }
