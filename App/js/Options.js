@@ -111,16 +111,6 @@ xui.Class('App.Options', 'xui.Module',{
                         "imageClass" : "xui-icon-number3"
                     }
                 ])
-                .onClick([
-                    {
-                        "desc" : "Action 1",
-                        "type" : "control",
-                        "target" : "xui_ui_list22",
-                        "args" : [ ],
-                        "method" : "show",
-                        "event" : 1
-                    }
-                ])
             );
             
             append(
