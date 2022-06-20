@@ -77,7 +77,7 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input60")
-                .setHoverPop("xui_ui_list43")
+                .setHoverPop("xui_ui_list70")
                 .setLeft("2em")
                 .setTop("10.666666666666666em")
                 .setWidth("19.333333333333332em")
@@ -88,7 +88,7 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input67")
-                .setHoverPop("xui_ui_list43")
+                .setHoverPop("xui_ui_list81")
                 .setLeft("2em")
                 .setTop("14.666666666666666em")
                 .setWidth("18em")
