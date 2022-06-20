@@ -172,7 +172,7 @@ xui.Class('App', 'xui.Module',{
                     {
                         "desc" : "Action 1",
                         "type" : "page",
-                        "target" : "App.Frame",
+                        "target" : "App.Options",
                         "args" : [true],
                         "method" : "switch",
                         "event" : 1
