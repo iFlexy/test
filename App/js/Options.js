@@ -94,9 +94,9 @@ xui.Class('App.Options', 'xui.Module',{
                         "disabled" : true
                     }
                 ])
-                .setLeft("29.866666666666667em")
-                .setTop("23.2em")
-                .setVisibility("visible")
+                .setLeft("8.6em")
+                .setTop("3.933333333333333em")
+                .setVisibility("hidden")
                 .setValue("a")
                 .onItemSelected([
                     {
