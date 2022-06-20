@@ -250,7 +250,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.HTMLButton")
                 .setHost(host,"xui_ui_htmlbutton2")
                 .setLeft("13.333333333333334em")
-                .setTop("42em")
+                .setTop("51.333333333333336em")
                 .setWidth("13.125em")
                 .setHeight("2.5em")
                 .setCaption("Submit")
@@ -262,6 +262,52 @@ xui.Class('App.Options', 'xui.Module',{
                         "args" : [ ],
                         "method" : "pop",
                         "event" : 1
+                    }
+                ])
+            );
+            
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput100")
+                .setLeft("8em")
+                .setTop("41.333333333333336em")
+                .setWidth("22em")
+                .setLabelSize("11em")
+                .setLabelCaption("Activated Clotting Time")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "≤300 seconds",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : ">300 seconds",
+                        "imageClass" : "xui-icon-number2"
+                    }
+                ])
+            );
+            
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput105")
+                .setLeft("4.666666666666667em")
+                .setTop("46em")
+                .setWidth("25.333333333333332em")
+                .setLabelSize("14em")
+                .setLabelCaption("International Normalised Ratio")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "≤1.5",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : ">1.5",
+                        "imageClass" : "xui-icon-number2"
                     }
                 ])
             );
