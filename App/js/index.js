@@ -104,6 +104,16 @@ xui.Class('App', 'xui.Module',{
                         "cursor" : "pointer"
                     }
                 })
+                .onClick([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "page",
+                        "target" : "App.Options",
+                        "args" : [true],
+                        "method" : "switch",
+                        "event" : 1
+                    }
+                ])
             );
             
             return children;
