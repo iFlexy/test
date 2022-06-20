@@ -37,7 +37,7 @@ xui.Class('App.Options', 'xui.Module',{
                 .setHost(host,"xui_ui_label19")
                 .setSpaceUnit("px")
                 .setLeft("130px")
-                .setTop("20px")
+                .setTop("30px")
                 .setWidth("334px")
                 .setHeight("47px")
                 .setCaption("Angiorithm")
