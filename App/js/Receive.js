@@ -35,88 +35,52 @@ xui.Class('App.Receive', 'xui.Module',{
                         "caption" : "VCDs"
                     },
                     {
-                        "id" : "input",
-                        "type" : "input",
+                        "id" : "b1",
+                        "type" : "label",
                         "width" : "8em",
                         "caption" : "Vessels"
                     },
                     {
-                        "id" : "combobox",
-                        "type" : "combobox",
+                        "id" : "c1",
+                        "type" : "label",
                         "width" : "8em",
                         "caption" : "Vessel Size"
                     },
                     {
-                        "id" : "listbox",
-                        "type" : "listbox",
+                        "id" : "d1",
+                        "type" : "label",
                         "width" : "8em",
                         "caption" : "Sheath Size"
                     },
                     {
-                        "id" : "getter",
-                        "type" : "getter",
+                        "id" : "e1",
+                        "type" : "label",
                         "width" : "8em",
                         "caption" : "Arterial Bifurcation"
                     },
                     {
-                        "id" : "cmdbox",
-                        "type" : "cmdbox",
+                        "id" : "f1",
+                        "type" : "label",
                         "width" : "8em",
                         "caption" : "Inguinal Ligament Location"
                     },
                     {
-                        "id" : "popbox",
-                        "type" : "popbox",
+                        "id" : "g1",
+                        "type" : "label",
                         "width" : "8em",
                         "caption" : "Calcified Vessels"
                     },
                     {
-                        "id" : "date",
-                        "type" : "date",
+                        "id" : "h1",
+                        "type" : "label",
                         "width" : "8em",
-                        "caption" : "date"
+                        "caption" : "Medications"
                     },
                     {
-                        "id" : "time",
-                        "type" : "time",
+                        "id" : "i1",
+                        "type" : "label",
                         "width" : "8em",
-                        "caption" : "time"
-                    },
-                    {
-                        "id" : "datetime",
-                        "type" : "datetime",
-                        "width" : "8em",
-                        "caption" : "datetime"
-                    },
-                    {
-                        "id" : "color",
-                        "type" : "color",
-                        "width" : "8em",
-                        "caption" : "color"
-                    },
-                    {
-                        "id" : "spin",
-                        "type" : "spin",
-                        "width" : "8em",
-                        "caption" : "spin"
-                    },
-                    {
-                        "id" : "counter",
-                        "type" : "counter",
-                        "width" : "8em",
-                        "caption" : "counter"
-                    },
-                    {
-                        "id" : "currency",
-                        "type" : "currency",
-                        "width" : "8em",
-                        "caption" : "currency"
-                    },
-                    {
-                        "id" : "number",
-                        "type" : "number",
-                        "width" : "8em",
-                        "caption" : "number"
+                        "caption" : "Price"
                     }
                 ])
                 .setRows([
@@ -126,7 +90,7 @@ xui.Class('App.Receive', 'xui.Module',{
                                 "value" : "AngioSeal"
                             },
                             {
-                                "value" : "input1"
+                                "value" : "Common Femoral Artery"
                             },
                             {
                                 "value" : ""
@@ -144,7 +108,7 @@ xui.Class('App.Receive', 'xui.Module',{
                                 "value" : ""
                             },
                             {
-                                "value" : "2022-06-20 22:06:44"
+                                "value" : ""
                             },
                             {
                                 "value" : "00:00"
@@ -175,7 +139,7 @@ xui.Class('App.Receive', 'xui.Module',{
                                 "value" : "StarClose"
                             },
                             {
-                                "value" : "input2"
+                                "value" : "Common Femoral Artery"
                             },
                             {
                                 "value" : ""
@@ -224,7 +188,7 @@ xui.Class('App.Receive', 'xui.Module',{
                                 "value" : "CELT"
                             },
                             {
-                                "value" : "input3"
+                                "value" : "Common Femoral Artery"
                             },
                             {
                                 "value" : ""
@@ -273,7 +237,7 @@ xui.Class('App.Receive', 'xui.Module',{
                                 "value" : "MynxAce"
                             },
                             {
-                                "value" : "input4"
+                                "value" : "Common Femoral Artery, Superficial Common Artery, Deep Femoral Artery"
                             },
                             {
                                 "value" : ""
@@ -322,7 +286,7 @@ xui.Class('App.Receive', 'xui.Module',{
                                 "value" : "ProGlide"
                             },
                             {
-                                "value" : "input5"
+                                "value" : "Common Femoral Artery"
                             },
                             {
                                 "value" : ""
