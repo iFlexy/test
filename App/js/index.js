@@ -21,22 +21,11 @@ xui.Class('App', 'xui.Module',{
             var host=this, children=[], append=function(child){children.push(child.get(0));};
             
             append(
-                xui.create("xui.UI.Icon")
-                .setHost(host,"xui_ui_icon68")
-                .setLeft("15em")
-                .setTop("0.8333333333333334em")
-                .setWidth("6.666666666666667em")
-                .setHeight("3.3333333333333335em")
-                .setImageClass("fa fa-lg fa-american-sign-language-interpreting")
-                .setIconFontSize("3em")
-            );
-            
-            append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label144")
-                .setLeft("10.5em")
-                .setTop("2.6666666666666665em")
-                .setCaption("Prototype")
+                .setLeft("10.613333333333333em")
+                .setTop("3.68em")
+                .setCaption("Angiorithm Prototype")
                 .setCustomStyle({
                     "KEY" : {
                         "font-size" : "1.25em"
@@ -47,8 +36,8 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.SVGPaper")
                 .setHost(host,"xui_ui_svgpaper1")
-                .setLeft("4.6em")
-                .setTop("6.6em")
+                .setLeft("3.933333333333333em")
+                .setTop("8.6em")
                 .setWidth("33.125em")
                 .setHeight("22.6875em")
             );
@@ -56,18 +45,10 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_svgpaper1.append(
                 xui.create("xui.UI.Icon")
                 .setHost(host,"xui_ui_icon37")
-                .setLeft("19.3125em")
-                .setTop("2.0833333333333335em")
+                .setLeft("24.666666666666668em")
+                .setTop("6em")
                 .setImageClass("fa fa-lg fa-users")
                 .setIconFontSize("3em")
-            );
-            
-            host.xui_ui_svgpaper1.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label107")
-                .setLeft("24.3125em")
-                .setTop("3.6875em")
-                .setCaption("Participants")
             );
             
             host.xui_ui_svgpaper1.append(
@@ -88,7 +69,7 @@ xui.Class('App', 'xui.Module',{
                 .setSvgTag("FlowChart:Process")
                 .setAttr({
                     "KEY" : {
-                        "x" : 160,
+                        "x" : 170,
                         "y" : 140,
                         "width" : 120,
                         "height" : 40,
@@ -114,6 +95,17 @@ xui.Class('App', 'xui.Module',{
                         "event" : 1
                     }
                 ])
+            );
+            
+            append(
+                xui.create("xui.UI.Icon")
+                .setHost(host,"xui_ui_icon68")
+                .setLeft("27.266666666666666em")
+                .setTop("3.933333333333333em")
+                .setWidth("6.666666666666667em")
+                .setHeight("3.3333333333333335em")
+                .setImageClass("fa fa-lg fa-american-sign-language-interpreting")
+                .setIconFontSize("3em")
             );
             
             return children;
