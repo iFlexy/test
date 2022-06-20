@@ -74,10 +74,28 @@ xui.Class('App.Receive', 'xui.Module',{
                         "id" : "h1",
                         "type" : "label",
                         "width" : "8em",
-                        "caption" : "Medications"
+                        "caption" : "Use of Antiplatelets"
                     },
                     {
                         "id" : "i1",
+                        "type" : "label",
+                        "width" : "8em",
+                        "caption" : "Use of DOAC"
+                    },
+                    {
+                        "id" : "j1",
+                        "type" : "label",
+                        "width" : "8em",
+                        "caption" : "ACT"
+                    },
+                    {
+                        "id" : "k1",
+                        "type" : "label",
+                        "width" : "8em",
+                        "caption" : "INR"
+                    },
+                    {
+                        "id" : "l1",
                         "type" : "label",
                         "width" : "8em",
                         "caption" : "Price"
