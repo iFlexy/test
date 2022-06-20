@@ -187,6 +187,34 @@ xui.Class('App.Options', 'xui.Module',{
                 ])
             );
             
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput476")
+                .setLeft("10.666666666666666em")
+                .setTop("34em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Medications")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "Warfarin",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "Bivalirudin",
+                        "imageClass" : "xui-icon-number2"
+                    },
+                    {
+                        "id" : "c",
+                        "caption" : "Heparin",
+                        "imageClass" : "xui-icon-number3"
+                    }
+                ])
+            );
+            
             append(
                 xui.create("xui.UI.List")
                 .setHost(host,"xui_ui_list81")
