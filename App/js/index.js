@@ -215,31 +215,6 @@ xui.Class('App', 'xui.Module',{
                 .setShadow(false)
             );
             
-            host.xui_ui_svgpaper1.append(
-                xui.create("xui.svg.connector")
-                .setHost(host,"xui_svg_connector107")
-                .setSvgTag("Connectors:Straight")
-                .setAttr({
-                    "KEY" : {
-                        "path" : "M,370,180L,370,260",
-                        "fill" : "none",
-                        "stroke" : "#004A7F",
-                        "stroke-width" : 2,
-                        "arrow-start" : "oval-midium-midium",
-                        "arrow-end" : "classic-wide-long"
-                    },
-                    "BG" : {
-                        "fill" : "none",
-                        "stroke" : "#fff",
-                        "stroke-width" : 4
-                    }
-                })
-                .setFromObj("xui_svg_rectcomb3")
-                .setFromPoint("bottom")
-                .setToObj("xui_svg_rectcomb61")
-                .setToPoint("top")
-            );
-            
             append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label144")
