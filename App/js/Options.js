@@ -113,52 +113,40 @@ xui.Class('App.Options', 'xui.Module',{
                 ])
             );
             
-            append(
-                xui.create("xui.UI.List")
-                .setHost(host,"xui_ui_list22")
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput429")
+                .setLeft("10.666666666666666em")
+                .setTop("14em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Sheath Size")
+                .setType("listbox")
                 .setItems([
                     {
                         "id" : "a",
-                        "caption" : "< 5 mm",
+                        "caption" : "5 Fr",
                         "imageClass" : "xui-icon-number1"
                     },
                     {
                         "id" : "b",
-                        "caption" : "5 mm",
+                        "caption" : "6 Fr",
                         "imageClass" : "xui-icon-number2"
                     },
                     {
                         "id" : "c",
-                        "caption" : "> 5 mm",
+                        "caption" : "7 Fr",
                         "imageClass" : "xui-icon-number3"
-                    }
-                ])
-                .setLeft("18.6em")
-                .setTop("9.933333333333334em")
-                .setHeight("7em")
-                .setVisibility("hidden")
-                .setValue("a")
-                .onItemSelected([
-                    {
-                        "desc" : "set value",
-                        "type" : "control",
-                        "target" : "xui_ui_comboinput392",
-                        "args" : [
-                            "{page.xui_ui_comboinput392.setUIValue()}",
-                            undefined,
-                            undefined,
-                            "{args[1]caption}"
-                        ],
-                        "method" : "setUIValue",
-                        "event" : 2,
-                        "redirection" : "other:callback:call"
                     },
                     {
-                        "desc" : "hide self",
-                        "type" : "control",
-                        "target" : "xui_ui_list22",
-                        "args" : [ ],
-                        "method" : "hide"
+                        "id" : "d",
+                        "caption" : "8 Fr",
+                        "imageClass" : "xui-icon-number4"
+                    },
+                    {
+                        "id" : "e",
+                        "caption" : ">8 Fr",
+                        "imageClass" : "xui-icon-number5"
                     }
                 ])
             );
@@ -193,10 +181,10 @@ xui.Class('App.Options', 'xui.Module',{
                         "imageClass" : "xui-icon-number5"
                     }
                 ])
-                .setLeft("8.6em")
-                .setTop("7.933333333333334em")
+                .setLeft("29.266666666666666em")
+                .setTop("3.2666666666666666em")
                 .setHeight("11em")
-                .setVisibility("hidden")
+                .setVisibility("visible")
                 .setValue("a")
                 .onItemSelected([
                     {
@@ -238,10 +226,10 @@ xui.Class('App.Options', 'xui.Module',{
                         "imageClass" : "xui-icon-number2"
                     }
                 ])
-                .setLeft("9.933333333333334em")
-                .setTop("11.933333333333334em")
+                .setLeft("29.266666666666666em")
+                .setTop("14.6em")
                 .setHeight("5em")
-                .setVisibility("hidden")
+                .setVisibility("visible")
                 .setValue("a")
                 .onItemSelected([
                     {
