@@ -179,7 +179,7 @@ xui.Class('App.Options', 'xui.Module',{
                     {
                         "desc" : "hide self",
                         "type" : "control",
-                        "target" : "xui_ui_list22",
+                        "target" : "xui_ui_list43",
                         "args" : [ ],
                         "method" : "hide"
                     }
