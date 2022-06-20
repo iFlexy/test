@@ -34,7 +34,7 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.SVGPaper")
                 .setHost(host,"xui_ui_svgpaper1")
-                .setLeft("1.6875em")
+                .setLeft("1.6666666666666667em")
                 .setTop("6.666666666666667em")
                 .setWidth("33.125em")
                 .setHeight("22.6875em")
@@ -75,14 +75,6 @@ xui.Class('App', 'xui.Module',{
             );
             
             host.xui_ui_svgpaper1.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label10")
-                .setLeft("9.375em")
-                .setTop("8.6875em")
-                .setCaption("Send to participants")
-            );
-            
-            host.xui_ui_svgpaper1.append(
                 xui.create("xui.svg.rectComb")
                 .setHost(host,"xui_svg_rectcomb1")
                 .setSvgTag("FlowChart:Process")
@@ -119,31 +111,6 @@ xui.Class('App', 'xui.Module',{
                         "event" : 1
                     }
                 ])
-            );
-            
-            host.xui_ui_svgpaper1.append(
-                xui.create("xui.svg.connector")
-                .setHost(host,"xui_svg_connector1")
-                .setSvgTag("Connectors:Straight")
-                .setAttr({
-                    "KEY" : {
-                        "path" : "M,144,160L,310,160",
-                        "fill" : "none",
-                        "stroke" : "#004A7F",
-                        "stroke-width" : 2,
-                        "arrow-start" : "oval-midium-midium",
-                        "arrow-end" : "classic-wide-long"
-                    },
-                    "BG" : {
-                        "fill" : "none",
-                        "stroke" : "#fff",
-                        "stroke-width" : 4
-                    }
-                })
-                .setFromObj("xui_svg_rectcomb1")
-                .setFromPoint("right")
-                .setToObj("xui_svg_rectcomb3")
-                .setToPoint("left")
             );
             
             host.xui_ui_svgpaper1.append(
