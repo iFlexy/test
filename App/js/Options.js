@@ -35,8 +35,8 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.HTMLButton")
                 .setHost(host,"xui_ui_htmlbutton2")
-                .setLeft("11.333333333333334em")
-                .setTop("36.666666666666664em")
+                .setLeft("13.333333333333334em")
+                .setTop("40.666666666666664em")
                 .setWidth("13.125em")
                 .setHeight("2.5em")
                 .setCaption("Submit")
