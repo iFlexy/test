@@ -187,7 +187,10 @@ xui.Class('App.Options', 'xui.Module',{
                         "type" : "control",
                         "target" : "xui_ui_input41",
                         "args" : [
-                            "{page.xui_ui_input41.setUIValue()}"
+                            "{page.xui_ui_input41.setUIValue()}",
+                            undefined,
+                            undefined,
+                            "{args[1]caption}"
                         ],
                         "method" : "setUIValue",
                         "event" : 2,
@@ -229,7 +232,10 @@ xui.Class('App.Options', 'xui.Module',{
                         "type" : "control",
                         "target" : "xui_ui_input60",
                         "args" : [
-                            "{page.xui_ui_input60.setUIValue()}"
+                            "{page.xui_ui_input60.setUIValue()}",
+                            undefined,
+                            undefined,
+                            "{args[1]caption}"
                         ],
                         "method" : "setUIValue",
                         "event" : 2,
@@ -271,7 +277,10 @@ xui.Class('App.Options', 'xui.Module',{
                         "type" : "control",
                         "target" : "xui_ui_input67",
                         "args" : [
-                            "{page.xui_ui_input67.setUIValue()}"
+                            "{page.xui_ui_input67.setUIValue()}",
+                            undefined,
+                            undefined,
+                            "{args[1]caption}"
                         ],
                         "method" : "setUIValue",
                         "event" : 2,
