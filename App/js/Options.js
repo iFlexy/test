@@ -97,24 +97,18 @@ xui.Class('App.Options', 'xui.Module',{
                 .setItems([
                     {
                         "id" : "a",
-                        "caption" : "item 1",
+                        "caption" : "< 5 mm",
                         "imageClass" : "xui-icon-number1"
                     },
                     {
                         "id" : "b",
-                        "caption" : "item 2",
+                        "caption" : "5 mm",
                         "imageClass" : "xui-icon-number2"
                     },
                     {
                         "id" : "c",
-                        "caption" : "item 3",
+                        "caption" : "> 5 mm",
                         "imageClass" : "xui-icon-number3"
-                    },
-                    {
-                        "id" : "d",
-                        "caption" : "item 4",
-                        "imageClass" : "xui-icon-number4",
-                        "disabled" : true
                     }
                 ])
                 .onClick([
