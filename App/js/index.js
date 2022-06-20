@@ -108,7 +108,7 @@ xui.Class('App', 'xui.Module',{
                     {
                         "desc" : "Action 1",
                         "type" : "page",
-                        "target" : "App.Options",
+                        "target" : "App.Input",
                         "args" : [true],
                         "method" : "switch",
                         "event" : 1
