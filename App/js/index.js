@@ -36,7 +36,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_label144")
                 .setLeft("10.5em")
                 .setTop("2.6666666666666665em")
-                .setCaption("Survey Prototype")
+                .setCaption("Prototype")
                 .setCustomStyle({
                     "KEY" : {
                         "font-size" : "1.25em"
