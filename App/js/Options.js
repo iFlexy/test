@@ -215,6 +215,34 @@ xui.Class('App.Options', 'xui.Module',{
                 ])
             );
             
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput489")
+                .setLeft("10.666666666666666em")
+                .setTop("4em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Type of Vessel")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "Common Femoral Artery",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "Superficial Femoral Artery",
+                        "imageClass" : "xui-icon-number2"
+                    },
+                    {
+                        "id" : "c",
+                        "caption" : "Deep Femoral Artery",
+                        "imageClass" : "xui-icon-number3"
+                    }
+                ])
+            );
+            
             append(
                 xui.create("xui.UI.List")
                 .setHost(host,"xui_ui_list81")
