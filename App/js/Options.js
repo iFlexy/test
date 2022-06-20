@@ -35,8 +35,8 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.HTMLButton")
                 .setHost(host,"xui_ui_htmlbutton2")
-                .setLeft("12em")
-                .setTop("29.333333333333332em")
+                .setLeft("11.333333333333334em")
+                .setTop("36.666666666666664em")
                 .setWidth("13.125em")
                 .setHeight("2.5em")
                 .setCaption("Submit")
@@ -50,28 +50,6 @@ xui.Class('App.Options', 'xui.Module',{
                         "event" : 1
                     }
                 ])
-            );
-            
-            host.xui_ui_div19.append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input60")
-                .setHoverPop("xui_ui_list70")
-                .setLeft("1.3333333333333333em")
-                .setTop("0.6666666666666666em")
-                .setWidth("19.333333333333332em")
-                .setLabelSize("8em")
-                .setLabelCaption("Arterial Bifurcation")
-            );
-            
-            host.xui_ui_div19.append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input67")
-                .setHoverPop("xui_ui_list81")
-                .setLeft("1.3333333333333333em")
-                .setTop("4.666666666666667em")
-                .setWidth("18em")
-                .setLabelSize("8em")
-                .setLabelCaption("Inguinal Ligament Location")
             );
             
             host.xui_ui_div19.append(
@@ -186,107 +164,25 @@ xui.Class('App.Options', 'xui.Module',{
                 ])
             );
             
-            append(
-                xui.create("xui.UI.List")
-                .setHost(host,"xui_ui_list43")
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput460")
+                .setLeft("10.666666666666666em")
+                .setTop("29.333333333333332em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Calcification of Vessel")
+                .setType("listbox")
                 .setItems([
                     {
                         "id" : "a",
-                        "caption" : "5 Fr",
+                        "caption" : "Yes",
                         "imageClass" : "xui-icon-number1"
                     },
                     {
                         "id" : "b",
-                        "caption" : "6 Fr",
+                        "caption" : "No",
                         "imageClass" : "xui-icon-number2"
-                    },
-                    {
-                        "id" : "c",
-                        "caption" : "7 Fr",
-                        "imageClass" : "xui-icon-number3"
-                    },
-                    {
-                        "id" : "d",
-                        "caption" : "8 Fr",
-                        "imageClass" : "xui-icon-number4"
-                    },
-                    {
-                        "id" : "e",
-                        "caption" : "> 8 Fr",
-                        "imageClass" : "xui-icon-number5"
-                    }
-                ])
-                .setLeft("29.266666666666666em")
-                .setTop("3.2666666666666666em")
-                .setHeight("11em")
-                .setVisibility("visible")
-                .setValue("a")
-                .onItemSelected([
-                    {
-                        "desc" : "set value",
-                        "type" : "control",
-                        "target" : "xui_ui_input41",
-                        "args" : [
-                            "{page.xui_ui_input41.setUIValue()}",
-                            undefined,
-                            undefined,
-                            "{args[1]caption}"
-                        ],
-                        "method" : "setUIValue",
-                        "event" : 2,
-                        "redirection" : "other:callback:call"
-                    },
-                    {
-                        "desc" : "hide self",
-                        "type" : "control",
-                        "target" : "xui_ui_list43",
-                        "args" : [ ],
-                        "method" : "hide"
-                    }
-                ])
-            );
-            
-            append(
-                xui.create("xui.UI.List")
-                .setHost(host,"xui_ui_list70")
-                .setItems([
-                    {
-                        "id" : "a",
-                        "caption" : "Above",
-                        "imageClass" : "xui-icon-number1"
-                    },
-                    {
-                        "id" : "b",
-                        "caption" : "Below",
-                        "imageClass" : "xui-icon-number2"
-                    }
-                ])
-                .setLeft("29.266666666666666em")
-                .setTop("14.6em")
-                .setHeight("5em")
-                .setVisibility("visible")
-                .setValue("a")
-                .onItemSelected([
-                    {
-                        "desc" : "set value",
-                        "type" : "control",
-                        "target" : "xui_ui_input60",
-                        "args" : [
-                            "{page.xui_ui_input60.setUIValue()}",
-                            undefined,
-                            undefined,
-                            "{args[1]caption}"
-                        ],
-                        "method" : "setUIValue",
-                        "event" : 2,
-                        "redirection" : "other:callback:call"
-                    },
-                    {
-                        "desc" : "hide self",
-                        "type" : "control",
-                        "target" : "xui_ui_list70",
-                        "args" : [ ],
-                        "method" : "hide"
                     }
                 ])
             );
