@@ -323,13 +323,10 @@ xui.Class('App.Options', 'xui.Module',{
             
             return children;
             // ]]Code created by CrossUI RAD Studio
-        },
-
-        // Give a chance to determine which UI controls will be appended to parent container
-        customAppend : function(parent, subId, left, top){
-            // "return false" will cause all the internal UI controls will be added to the parent panel
-            return false;
         }
+        // Give a chance to determine which UI controls will be appended to parent container
+        //customAppend : function(parent, subId, left, top){
+            // "return false" will cause all the internal UI controls will be added to the parent panel
         /*,
         // To determine how properties affects this module
         propSetAction : function(prop){
