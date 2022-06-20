@@ -27,15 +27,14 @@ xui.Class('App.Options', 'xui.Module',{
                 .setHideEffects("Blur")
                 .setLeft("0em")
                 .setTop("0em")
-                .setWidth("22em")
-                .setHeight("30em")
+                .setWidth("39.86666666666667em")
+                .setHeight("63.8em")
                 .setOverflow("hidden")
             );
             
             host.xui_ui_div19.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_comboinput13")
-                .setDirtyMark(false)
                 .setLeft("1.6666666666666667em")
                 .setTop("1.6666666666666667em")
                 .setWidth("18.9375em")
@@ -43,15 +42,14 @@ xui.Class('App.Options', 'xui.Module',{
                 .setPlaceholder("Input here...")
                 .setLabelSize("2em")
                 .setLabelPos("top")
-                .setLabelCaption("Question")
+                .setLabelCaption("Vessel Size")
                 .setLabelHAlign("left")
                 .setValue("What color do you prefer?")
-                );
+            );
             
             host.xui_ui_div19.append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button14")
-                .setDirtyMark(false)
                 .setLeft("9.916666666666666em")
                 .setTop("38.25em")
                 .setWidth("11.5em")
@@ -59,77 +57,34 @@ xui.Class('App.Options', 'xui.Module',{
                 .setCaption("邀 请 好 友 来 参 谋")
                 .onClick([
                     {
-                        "desc":"Action 1",
-                        "type":"other",
-                        "target":"callback",
-                        "args":[
+                        "desc" : "Action 1",
+                        "type" : "other",
+                        "target" : "callback",
+                        "args" : [
                             {
-                                "ipage":"status_from",
-                                "tab":"home"
+                                "ipage" : "status_from",
+                                "tab" : "home"
                             }
                         ],
-                        "method":"setFI",
-                        "event":1
+                        "method" : "setFI",
+                        "event" : 1
                     }
                 ])
-                );
+            );
             
             host.xui_ui_div19.append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button26")
-                .setDirtyMark(false)
                 .setLeft("22.5em")
                 .setTop("33.25em")
                 .setWidth("5em")
-                .setImageClass("fa fa-lg fa-plus")
                 .setCaption("选项")
-                );
-            
-            host.xui_ui_div19.append(
-                xui.create("xui.UI.Block")
-                .setHost(host,"xui_ui_block27")
-                .setLeft("1.6666666666666667em")
-                .setTop("8.75em")
-                .setWidth("18.9375em")
-                .setHeight("8.125em")
-                .setBorderType("flat")
-                .setBackground("#FFFFFF")
-                .setOverflow("hidden")
-                );
-            
-            host.xui_ui_block27.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label9")
-                .setLeft("1.6666666666666667em")
-                .setTop("0.8333333333333334em")
-                .setWidth("5.666666666666667em")
-                .setCaption("Option 1")
-                .setHAlign("left")
-                .setCustomStyle({
-                    "KEY":{
-                        "color":"#008B8B"
-                    }
-                })
-                );
-            
-            host.xui_ui_block27.append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input1")
-                .setDirtyMark(false)
-                .setLeft("1.6666666666666667em")
-                .setTop("2.5em")
-                .setWidth("15.125em")
-                .setHeight("5em")
-                .setLabelSize("auto")
-                .setLabelPos("none")
-                .setMultiLines(true)
-                .setValue("Blue")
-                );
+                .setImageClass("fa fa-lg fa-plus")
+            );
             
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput203")
-                .setDirtyMark(false)
                 .setLeft("13.25em")
                 .setTop("42.416666666666664em")
                 .setWidth("15.833333333333334em")
@@ -140,7 +95,7 @@ xui.Class('App.Options', 'xui.Module',{
                 .setUnit("分钟")
                 .setPrecision(0)
                 .setValue(10)
-                );
+            );
             
             host.xui_ui_div19.append(
                 xui.create("xui.UI.Label")
@@ -150,73 +105,104 @@ xui.Class('App.Options', 'xui.Module',{
                 .setWidth("18.875em")
                 .setCaption("Set the options")
                 .setHAlign("left")
-                );
-            
-            host.xui_ui_div19.append(
-                xui.create("xui.UI.Block")
-                .setHost(host,"xui_ui_block15")
-                .setLeft("1.6875em")
-                .setTop("17.5em")
-                .setWidth("18.9375em")
-                .setHeight("7.5em")
-                .setBorderType("flat")
-                .setBackground("#FFFFFF")
-                .setOverflow("hidden")
-                );
-            
-            host.xui_ui_block15.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label17")
-                .setLeft("1.6666666666666667em")
-                .setTop("0.8333333333333334em")
-                .setWidth("5.666666666666667em")
-                .setCaption("Option 2")
-                .setHAlign("left")
-                .setCustomStyle({
-                    "KEY":{
-                        "color":"#008B8B"
-                    }
-                })
-                );
-            
-            host.xui_ui_block15.append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input5")
-                .setDirtyMark(false)
-                .setLeft("1.6666666666666667em")
-                .setTop("2.5em")
-                .setWidth("15.1875em")
-                .setHeight("4.375em")
-                .setLabelSize("auto")
-                .setLabelPos("none")
-                .setMultiLines(true)
-                .setValue("Red")
-                );
+            );
             
             host.xui_ui_div19.append(
                 xui.create("xui.UI.HTMLButton")
                 .setHost(host,"xui_ui_htmlbutton2")
-                .setLeft("4.375em")
-                .setTop("26.25em")
+                .setLeft("5.933333333333334em")
+                .setTop("35.93333333333333em")
                 .setWidth("13.125em")
                 .setHeight("2.5em")
-                .setHtml("Send to participants")
+                .setCaption("Send to participants")
                 .onClick([
                     {
-                        "desc":"Action 1",
-                        "type":"other",
-                        "target":"callback",
-                        "args":[
+                        "desc" : "Action 1",
+                        "type" : "other",
+                        "target" : "callback",
+                        "args" : [
                             {
-                                "tab":"receive",
-                                "ipage":"receive"
+                                "tab" : "receive",
+                                "ipage" : "receive"
                             }
                         ],
-                        "method":"setFI",
-                        "event":1
+                        "method" : "setFI",
+                        "event" : 1
                     }
                 ])
-                );
+            );
+            
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input29")
+                .setLeft("4.666666666666667em")
+                .setTop("12em")
+            );
+            
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input32")
+                .setLeft("22em")
+                .setTop("8.666666666666666em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("hover pop")
+            );
+            
+            append(
+                xui.create("xui.UI.List")
+                .setHost(host,"xui_ui_list22")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "< 5 mm",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "5 mm",
+                        "imageClass" : "xui-icon-number2"
+                    },
+                    {
+                        "id" : "c",
+                        "caption" : "> 5 mm",
+                        "imageClass" : "xui-icon-number3"
+                    },
+                    {
+                        "id" : "d",
+                        "caption" : "",
+                        "imageClass" : "xui-icon-number4",
+                        "disabled" : true
+                    }
+                ])
+                .setLeft("29.933333333333334em")
+                .setTop("9.933333333333334em")
+                .setVisibility("hidden")
+                .setValue("a")
+                .onItemSelected([
+                    {
+                        "desc" : "set value",
+                        "type" : "control",
+                        "target" : "xui_ui_input32",
+                        "args" : [
+                            "{page.xui_ui_input32.setUIValue()}",
+                            undefined,
+                            undefined,
+                            "{args[1] caption}"
+                        ],
+                        "method" : "setUIValue",
+                        "redirection" : "other:callback:call",
+                        "event" : 2
+                    },
+                    {
+                        "desc" : "hide self",
+                        "type" : "control",
+                        "target" : "xui_ui_list22",
+                        "args" : [ ],
+                        "method" : "hide"
+                    }
+                ])
+            );
             
             return children;
             // ]]Code created by CrossUI RAD Studio
