@@ -163,6 +163,29 @@ xui.Class('App.Options', 'xui.Module',{
                 ])
             );
             
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput455")
+                .setLeft("10.666666666666666em")
+                .setTop("24.666666666666668em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Inguinal Ligament Location")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "Above",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "Below",
+                        "imageClass" : "xui-icon-number2"
+                    }
+                ])
+            );
+            
             append(
                 xui.create("xui.UI.List")
                 .setHost(host,"xui_ui_list43")
