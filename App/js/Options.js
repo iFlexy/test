@@ -97,16 +97,11 @@ xui.Class('App.Options', 'xui.Module',{
                         "id" : "c",
                         "caption" : "> 5 mm",
                         "imageClass" : "xui-icon-number3"
-                    },
-                    {
-                        "id" : "d",
-                        "caption" : "",
-                        "imageClass" : "xui-icon-number4"
                     }
                 ])
                 .setLeft("8.6em")
                 .setTop("3.933333333333333em")
-                .setVisibility("hidden")
+                .setVisibility("visible")
                 .setValue("a")
                 .onItemSelected([
                     {
