@@ -121,10 +121,11 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput448")
-                .setLeft("10.666666666666666em")
+                .setLeft("10em")
                 .setTop("20.666666666666668em")
-                .setWidth("19.333333333333332em")
-                .setLabelSize("8em")
+                .setWidth("20em")
+                .setLabelSize("9em")
+                .setLabelGap("0.26666666666666666em")
                 .setLabelCaption("Arterial Bifurcation")
                 .setType("listbox")
                 .setItems([
@@ -144,10 +145,10 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput455")
-                .setLeft("10.666666666666666em")
+                .setLeft("6em")
                 .setTop("26em")
-                .setWidth("19.333333333333332em")
-                .setLabelSize("8em")
+                .setWidth("24em")
+                .setLabelSize("13em")
                 .setLabelCaption("Inguinal Ligament Location")
                 .setType("listbox")
                 .setItems([
@@ -167,10 +168,10 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput460")
-                .setLeft("10.666666666666666em")
+                .setLeft("8.666666666666666em")
                 .setTop("30.666666666666668em")
-                .setWidth("19.333333333333332em")
-                .setLabelSize("8em")
+                .setWidth("21.333333333333332em")
+                .setLabelSize("10em")
                 .setLabelCaption("Calcification of Vessel")
                 .setType("listbox")
                 .setItems([
