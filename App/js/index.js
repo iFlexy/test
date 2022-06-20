@@ -23,9 +23,9 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label144")
-                .setLeft("11.146666666666667em")
-                .setTop("6.88em")
-                .setCaption("Angiorithm Prototype")
+                .setLeft("10.08em")
+                .setTop("7.413333333333333em")
+                .setCaption("Angiorithm Prototype 1.0")
                 .setCustomStyle({
                     "KEY" : {
                         "font-size" : "1.25em"
