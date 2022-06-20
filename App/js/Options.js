@@ -225,7 +225,7 @@ xui.Class('App.Options', 'xui.Module',{
                 .setTop("36.666666666666664em")
                 .setWidth("23.333333333333332em")
                 .setLabelSize("12em")
-                .setLabelCaption("Use of Antiplatelets/DOAC")
+                .setLabelCaption("Use of Antiplatelets")
                 .setType("listbox")
                 .setItems([
                     {
@@ -245,7 +245,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.HTMLButton")
                 .setHost(host,"xui_ui_htmlbutton2")
                 .setLeft("13.333333333333334em")
-                .setTop("51.333333333333336em")
+                .setTop("54.666666666666664em")
                 .setWidth("13.125em")
                 .setHeight("2.5em")
                 .setCaption("Submit")
@@ -278,7 +278,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput100")
                 .setLeft("4.666666666666667em")
-                .setTop("41.333333333333336em")
+                .setTop("44.666666666666664em")
                 .setWidth("25.333333333333332em")
                 .setLabelSize("14em")
                 .setLabelCaption("Activated Clotting Time (ACT)")
@@ -301,7 +301,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput105")
                 .setLeft("2em")
-                .setTop("46em")
+                .setTop("49.333333333333336em")
                 .setWidth("28em")
                 .setLabelSize("17em")
                 .setLabelCaption("International Normalised Ratio (INR)")
@@ -315,6 +315,29 @@ xui.Class('App.Options', 'xui.Module',{
                     {
                         "id" : "b",
                         "caption" : ">1.5",
+                        "imageClass" : "xui-icon-number2"
+                    }
+                ])
+            );
+            
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput76")
+                .setLeft("6.666666666666667em")
+                .setTop("40.666666666666664em")
+                .setWidth("23.333333333333332em")
+                .setLabelSize("12em")
+                .setLabelCaption("Use of DOAC")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "Yes",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "No",
                         "imageClass" : "xui-icon-number2"
                     }
                 ])
