@@ -242,36 +242,14 @@ xui.Class('App.Options', 'xui.Module',{
             );
             
             host.xui_ui_div19.append(
-                xui.create("xui.UI.HTMLButton")
-                .setHost(host,"xui_ui_htmlbutton2")
+                xui.create("xui.UI.Button")
+                .setHost(host,"submit")
                 .setLeft("13.333333333333334em")
                 .setTop("56.666666666666664em")
                 .setWidth("13.125em")
                 .setHeight("2.5em")
                 .setCaption("Submit")
-                .onClick([
-                    {
-                        "desc" : "Action 1",
-                        "type" : "other",
-                        "target" : "msg",
-                        "args" : [ ],
-                        "method" : "pop",
-                        "event" : 1,
-                        "okFlag" : "_confirm_yes",
-                        "koFlag" : "_confirm_no"
-                    },
-                    {
-                        "desc" : "Action 2",
-                        "type" : "other",
-                        "target" : "url",
-                        "args" : [ ],
-                        "method" : "readText",
-                        "okFlag" : "_DI_succeed",
-                        "koFlag" : "_DI_fail",
-                        "onOK" : 1,
-                        "onKO" : 2
-                    }
-                ])
+                .onClick("_submit_onclick")
             );
             
             host.xui_ui_div19.append(
