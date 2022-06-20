@@ -85,6 +85,17 @@ xui.Class('App.Options', 'xui.Module',{
                 .setLabelCaption("Arterial Bifurcation")
             );
             
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input67")
+                .setHoverPop("xui_ui_list43")
+                .setLeft("2em")
+                .setTop("14.666666666666666em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Inguinal Ligament Location")
+            );
+            
             append(
                 xui.create("xui.UI.List")
                 .setHost(host,"xui_ui_list22")
@@ -207,18 +218,18 @@ xui.Class('App.Options', 'xui.Module',{
                         "imageClass" : "xui-icon-number2"
                     }
                 ])
-                .setLeft("8.6em")
+                .setLeft("9.933333333333334em")
                 .setTop("11.933333333333334em")
-                .setHeight("11em")
-                .setVisibility("visible")
+                .setHeight("5em")
+                .setVisibility("hidden")
                 .setValue("a")
                 .onItemSelected([
                     {
                         "desc" : "set value",
                         "type" : "control",
-                        "target" : "xui_ui_input41",
+                        "target" : "xui_ui_input60",
                         "args" : [
-                            "{page.xui_ui_input41.setUIValue()}"
+                            "{page.xui_ui_input60.setUIValue()}"
                         ],
                         "method" : "setUIValue",
                         "event" : 2,
@@ -227,7 +238,49 @@ xui.Class('App.Options', 'xui.Module',{
                     {
                         "desc" : "hide self",
                         "type" : "control",
-                        "target" : "xui_ui_list43",
+                        "target" : "xui_ui_list70",
+                        "args" : [ ],
+                        "method" : "hide"
+                    }
+                ])
+            );
+            
+            append(
+                xui.create("xui.UI.List")
+                .setHost(host,"xui_ui_list81")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "Above",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "Below",
+                        "imageClass" : "xui-icon-number2"
+                    }
+                ])
+                .setLeft("9.933333333333334em")
+                .setTop("15.933333333333334em")
+                .setHeight("5em")
+                .setVisibility("visible")
+                .setValue("a")
+                .onItemSelected([
+                    {
+                        "desc" : "set value",
+                        "type" : "control",
+                        "target" : "xui_ui_input67",
+                        "args" : [
+                            "{page.xui_ui_input67.setUIValue()}"
+                        ],
+                        "method" : "setUIValue",
+                        "event" : 2,
+                        "redirection" : "other:callback:call"
+                    },
+                    {
+                        "desc" : "hide self",
+                        "type" : "control",
+                        "target" : "xui_ui_list81",
                         "args" : [ ],
                         "method" : "hide"
                     }
