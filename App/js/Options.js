@@ -168,16 +168,13 @@ xui.Class('App.Options', 'xui.Module',{
                     {
                         "desc" : "set value",
                         "type" : "control",
-                        "target" : "xui_ui_input32",
+                        "target" : "xui_ui_input41",
                         "args" : [
-                            "{page.xui_ui_input32.setUIValue()}",
-                            undefined,
-                            undefined,
-                            "{args[1] caption}"
+                            "{page.xui_ui_input41.setUIValue()}"
                         ],
                         "method" : "setUIValue",
-                        "redirection" : "other:callback:call",
-                        "event" : 2
+                        "event" : 2,
+                        "redirection" : "other:callback:call"
                     },
                     {
                         "desc" : "hide self",
