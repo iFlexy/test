@@ -71,7 +71,7 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input41")
-                .setHoverPop("xui_ui_list22")
+                .setHoverPop("xui_ui_list43")
                 .setLeft("0.6em")
                 .setTop("6.6em")
                 .setWidth("18em")
@@ -101,8 +101,7 @@ xui.Class('App.Options', 'xui.Module',{
                     {
                         "id" : "d",
                         "caption" : "",
-                        "imageClass" : "xui-icon-number4",
-                        "disabled" : true
+                        "imageClass" : "xui-icon-number4"
                     }
                 ])
                 .setLeft("8.6em")
@@ -166,7 +165,7 @@ xui.Class('App.Options', 'xui.Module',{
                 ])
                 .setLeft("8.6em")
                 .setTop("7.933333333333334em")
-                .setVisibility("visible")
+                .setVisibility("hidden")
                 .setValue("a")
                 .onItemSelected([
                     {
