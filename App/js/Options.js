@@ -221,27 +221,22 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput476")
-                .setLeft("10.666666666666666em")
+                .setLeft("6.666666666666667em")
                 .setTop("36.666666666666664em")
-                .setWidth("19.333333333333332em")
-                .setLabelSize("8em")
-                .setLabelCaption("Medications")
+                .setWidth("23.333333333333332em")
+                .setLabelSize("12em")
+                .setLabelCaption("Use of Antiplatelets/DOAC")
                 .setType("listbox")
                 .setItems([
                     {
                         "id" : "a",
-                        "caption" : "Warfarin",
+                        "caption" : "Yes",
                         "imageClass" : "xui-icon-number1"
                     },
                     {
                         "id" : "b",
-                        "caption" : "Bivalirudin",
+                        "caption" : "No",
                         "imageClass" : "xui-icon-number2"
-                    },
-                    {
-                        "id" : "c",
-                        "caption" : "Heparin",
-                        "imageClass" : "xui-icon-number3"
                     }
                 ])
             );
