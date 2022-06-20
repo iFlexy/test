@@ -56,19 +56,19 @@ xui.Class('App.Receive', 'xui.Module',{
                         "id" : "getter",
                         "type" : "getter",
                         "width" : "8em",
-                        "caption" : "getter"
+                        "caption" : "Arterial Bifurcation"
                     },
                     {
                         "id" : "cmdbox",
                         "type" : "cmdbox",
                         "width" : "8em",
-                        "caption" : "cmdbox"
+                        "caption" : "Inguinal Ligament Location"
                     },
                     {
                         "id" : "popbox",
                         "type" : "popbox",
                         "width" : "8em",
-                        "caption" : "popbox"
+                        "caption" : "Calcified Vessels"
                     },
                     {
                         "id" : "date",
