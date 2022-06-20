@@ -101,7 +101,8 @@ xui.Class('App.Options', 'xui.Module',{
                 ])
                 .setLeft("8.6em")
                 .setTop("3.933333333333333em")
-                .setVisibility("visible")
+                .setHeight("7em")
+                .setVisibility("hidden")
                 .setValue("a")
                 .onItemSelected([
                     {
@@ -160,6 +161,7 @@ xui.Class('App.Options', 'xui.Module',{
                 ])
                 .setLeft("8.6em")
                 .setTop("7.933333333333334em")
+                .setHeight("11em")
                 .setVisibility("hidden")
                 .setValue("a")
                 .onItemSelected([
