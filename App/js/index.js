@@ -36,8 +36,8 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.SVGPaper")
                 .setHost(host,"xui_ui_svgpaper1")
-                .setLeft("3.933333333333333em")
-                .setTop("8.6em")
+                .setLeft("1.9333333333333333em")
+                .setTop("16.6em")
                 .setWidth("33.125em")
                 .setHeight("22.6875em")
             );
@@ -45,8 +45,8 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_svgpaper1.append(
                 xui.create("xui.UI.Icon")
                 .setHost(host,"xui_ui_icon37")
-                .setLeft("24.666666666666668em")
-                .setTop("6em")
+                .setLeft("13.333333333333334em")
+                .setTop("4em")
                 .setImageClass("fa fa-lg fa-users")
                 .setIconFontSize("3em")
             );
@@ -106,6 +106,26 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("3.3333333333333335em")
                 .setImageClass("fa fa-lg fa-american-sign-language-interpreting")
                 .setIconFontSize("3em")
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button10")
+                .setLeft("14.6em")
+                .setTop("9.933333333333334em")
+                .setWidth("6.933333333333334em")
+                .setHeight("2.6em")
+                .setCaption("Open it")
+                .onClick([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "page",
+                        "target" : "App.Options",
+                        "args" : [true],
+                        "method" : "switch",
+                        "event" : 1
+                    }
+                ])
             );
             
             return children;
