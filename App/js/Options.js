@@ -33,21 +33,51 @@ xui.Class('App.Options', 'xui.Module',{
             );
             
             host.xui_ui_div19.append(
-                xui.create("xui.UI.HTMLButton")
-                .setHost(host,"xui_ui_htmlbutton2")
-                .setLeft("13.333333333333334em")
-                .setTop("40.666666666666664em")
-                .setWidth("13.125em")
-                .setHeight("2.5em")
-                .setCaption("Submit")
-                .onClick([
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label19")
+                .setSpaceUnit("px")
+                .setLeft("130px")
+                .setTop("20px")
+                .setWidth("334px")
+                .setHeight("47px")
+                .setCaption("Angiorithm")
+                .setHAlign("center")
+                .setCustomStyle({
+                    "KEY" : {
+                        "color" : "#4B0082",
+                        "font-family" : "comic sans ms,cursive",
+                        "font-size" : "2em",
+                        "font-weight" : "bold",
+                        "text-shadow" : "0px 0px 9px #DA70D6",
+                        "opacity" : 0.8
+                    }
+                })
+            );
+            
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput489")
+                .setLeft("10.666666666666666em")
+                .setTop("6.666666666666667em")
+                .setWidth("19.333333333333332em")
+                .setLabelSize("8em")
+                .setLabelCaption("Type of Vessel")
+                .setType("listbox")
+                .setItems([
                     {
-                        "desc" : "Action 1",
-                        "type" : "other",
-                        "target" : "msg",
-                        "args" : [ ],
-                        "method" : "pop",
-                        "event" : 1
+                        "id" : "a",
+                        "caption" : "Common Femoral Artery",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "Superficial Femoral Artery",
+                        "imageClass" : "xui-icon-number2"
+                    },
+                    {
+                        "id" : "c",
+                        "caption" : "Deep Femoral Artery",
+                        "imageClass" : "xui-icon-number3"
                     }
                 ])
             );
@@ -56,7 +86,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput392")
                 .setLeft("10.666666666666666em")
-                .setTop("10em")
+                .setTop("11.333333333333334em")
                 .setWidth("19.333333333333332em")
                 .setLabelSize("8em")
                 .setLabelCaption("Vessel Size")
@@ -84,7 +114,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput429")
                 .setLeft("10.666666666666666em")
-                .setTop("15.333333333333334em")
+                .setTop("16.666666666666668em")
                 .setWidth("19.333333333333332em")
                 .setLabelSize("8em")
                 .setLabelCaption("Sheath Size")
@@ -122,7 +152,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput448")
                 .setLeft("10em")
-                .setTop("20.666666666666668em")
+                .setTop("22em")
                 .setWidth("20em")
                 .setLabelSize("9em")
                 .setLabelGap("0.26666666666666666em")
@@ -146,7 +176,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput455")
                 .setLeft("6em")
-                .setTop("26em")
+                .setTop("27.333333333333332em")
                 .setWidth("24em")
                 .setLabelSize("13em")
                 .setLabelCaption("Inguinal Ligament Location")
@@ -169,7 +199,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput460")
                 .setLeft("8.666666666666666em")
-                .setTop("30.666666666666668em")
+                .setTop("32em")
                 .setWidth("21.333333333333332em")
                 .setLabelSize("10em")
                 .setLabelCaption("Calcification of Vessel")
@@ -192,7 +222,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput476")
                 .setLeft("10.666666666666666em")
-                .setTop("35.333333333333336em")
+                .setTop("36.666666666666664em")
                 .setWidth("19.333333333333332em")
                 .setLabelSize("8em")
                 .setLabelCaption("Medications")
@@ -217,53 +247,23 @@ xui.Class('App.Options', 'xui.Module',{
             );
             
             host.xui_ui_div19.append(
-                xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput489")
-                .setLeft("10.666666666666666em")
-                .setTop("5.333333333333333em")
-                .setWidth("19.333333333333332em")
-                .setLabelSize("8em")
-                .setLabelCaption("Type of Vessel")
-                .setType("listbox")
-                .setItems([
+                xui.create("xui.UI.HTMLButton")
+                .setHost(host,"xui_ui_htmlbutton2")
+                .setLeft("13.333333333333334em")
+                .setTop("42em")
+                .setWidth("13.125em")
+                .setHeight("2.5em")
+                .setCaption("Submit")
+                .onClick([
                     {
-                        "id" : "a",
-                        "caption" : "Common Femoral Artery",
-                        "imageClass" : "xui-icon-number1"
-                    },
-                    {
-                        "id" : "b",
-                        "caption" : "Superficial Femoral Artery",
-                        "imageClass" : "xui-icon-number2"
-                    },
-                    {
-                        "id" : "c",
-                        "caption" : "Deep Femoral Artery",
-                        "imageClass" : "xui-icon-number3"
+                        "desc" : "Action 1",
+                        "type" : "other",
+                        "target" : "msg",
+                        "args" : [ ],
+                        "method" : "pop",
+                        "event" : 1
                     }
                 ])
-            );
-            
-            host.xui_ui_div19.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label19")
-                .setSpaceUnit("px")
-                .setLeft("130px")
-                .setTop("20px")
-                .setWidth("334px")
-                .setHeight("47px")
-                .setCaption("Angiorithm")
-                .setHAlign("center")
-                .setCustomStyle({
-                    "KEY" : {
-                        "color" : "#4B0082",
-                        "font-family" : "comic sans ms,cursive",
-                        "font-size" : "2em",
-                        "font-weight" : "bold",
-                        "text-shadow" : "0px 0px 9px #DA70D6",
-                        "opacity" : 0.8
-                    }
-                })
             );
             
             append(
