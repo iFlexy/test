@@ -54,21 +54,10 @@ xui.Class('App.Options', 'xui.Module',{
             
             host.xui_ui_div19.append(
                 xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input41")
-                .setHoverPop("xui_ui_list43")
-                .setLeft("8.666666666666666em")
-                .setTop("16.666666666666668em")
-                .setWidth("18em")
-                .setLabelSize("8em")
-                .setLabelCaption("Sheath Size")
-            );
-            
-            host.xui_ui_div19.append(
-                xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input60")
                 .setHoverPop("xui_ui_list70")
-                .setLeft("10.066666666666666em")
-                .setTop("20.733333333333334em")
+                .setLeft("1.3333333333333333em")
+                .setTop("0.6666666666666666em")
                 .setWidth("19.333333333333332em")
                 .setLabelSize("8em")
                 .setLabelCaption("Arterial Bifurcation")
@@ -78,8 +67,8 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input67")
                 .setHoverPop("xui_ui_list81")
-                .setLeft("10.066666666666666em")
-                .setTop("24.733333333333334em")
+                .setLeft("1.3333333333333333em")
+                .setTop("4.666666666666667em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Inguinal Ligament Location")
@@ -147,6 +136,29 @@ xui.Class('App.Options', 'xui.Module',{
                         "id" : "e",
                         "caption" : ">8 Fr",
                         "imageClass" : "xui-icon-number5"
+                    }
+                ])
+            );
+            
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput448")
+                .setLeft("10.666666666666666em")
+                .setTop("19.333333333333332em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Arterial Bifurcation")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "Above",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "Below",
+                        "imageClass" : "xui-icon-number2"
                     }
                 ])
             );
