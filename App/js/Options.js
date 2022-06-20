@@ -269,11 +269,11 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput100")
-                .setLeft("8em")
+                .setLeft("4.666666666666667em")
                 .setTop("41.333333333333336em")
-                .setWidth("22em")
-                .setLabelSize("11em")
-                .setLabelCaption("Activated Clotting Time")
+                .setWidth("25.333333333333332em")
+                .setLabelSize("14em")
+                .setLabelCaption("Activated Clotting Time (ACT)")
                 .setType("listbox")
                 .setItems([
                     {
@@ -292,11 +292,11 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput105")
-                .setLeft("4.666666666666667em")
+                .setLeft("2em")
                 .setTop("46em")
-                .setWidth("25.333333333333332em")
-                .setLabelSize("14em")
-                .setLabelCaption("International Normalised Ratio")
+                .setWidth("28em")
+                .setLabelSize("17em")
+                .setLabelCaption("International Normalised Ratio (INR)")
                 .setType("listbox")
                 .setItems([
                     {
