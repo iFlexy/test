@@ -256,7 +256,20 @@ xui.Class('App.Options', 'xui.Module',{
                         "target" : "msg",
                         "args" : [ ],
                         "method" : "pop",
-                        "event" : 1
+                        "event" : 1,
+                        "okFlag" : "_confirm_yes",
+                        "koFlag" : "_confirm_no"
+                    },
+                    {
+                        "desc" : "Action 2",
+                        "type" : "other",
+                        "target" : "url",
+                        "args" : [ ],
+                        "method" : "readText",
+                        "okFlag" : "_DI_succeed",
+                        "koFlag" : "_DI_fail",
+                        "onOK" : 1,
+                        "onKO" : 2
                     }
                 ])
             );
