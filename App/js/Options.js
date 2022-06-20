@@ -49,31 +49,6 @@ xui.Class('App.Options', 'xui.Module',{
             
             host.xui_ui_div19.append(
                 xui.create("xui.UI.Button")
-                .setHost(host,"xui_ui_button14")
-                .setLeft("9.916666666666666em")
-                .setTop("38.25em")
-                .setWidth("11.5em")
-                .setHeight("2.8333333333333335em")
-                .setCaption("邀 请 好 友 来 参 谋")
-                .onClick([
-                    {
-                        "desc" : "Action 1",
-                        "type" : "other",
-                        "target" : "callback",
-                        "args" : [
-                            {
-                                "ipage" : "status_from",
-                                "tab" : "home"
-                            }
-                        ],
-                        "method" : "setFI",
-                        "event" : 1
-                    }
-                ])
-            );
-            
-            host.xui_ui_div19.append(
-                xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button26")
                 .setLeft("22.5em")
                 .setTop("33.25em")
@@ -142,6 +117,7 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input32")
+                .setHoverPop("xui_ui_list22")
                 .setLeft("22em")
                 .setTop("8.666666666666666em")
                 .setWidth("18em")
