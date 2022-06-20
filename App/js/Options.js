@@ -343,51 +343,6 @@ xui.Class('App.Options', 'xui.Module',{
                 ])
             );
             
-            append(
-                xui.create("xui.UI.List")
-                .setHost(host,"xui_ui_list81")
-                .setItems([
-                    {
-                        "id" : "a",
-                        "caption" : "Above",
-                        "imageClass" : "xui-icon-number1"
-                    },
-                    {
-                        "id" : "b",
-                        "caption" : "Below",
-                        "imageClass" : "xui-icon-number2"
-                    }
-                ])
-                .setLeft("9.933333333333334em")
-                .setTop("15.933333333333334em")
-                .setHeight("5em")
-                .setVisibility("hidden")
-                .setValue("a")
-                .onItemSelected([
-                    {
-                        "desc" : "set value",
-                        "type" : "control",
-                        "target" : "xui_ui_input67",
-                        "args" : [
-                            "{page.xui_ui_input67.setUIValue()}",
-                            undefined,
-                            undefined,
-                            "{args[1]caption}"
-                        ],
-                        "method" : "setUIValue",
-                        "event" : 2,
-                        "redirection" : "other:callback:call"
-                    },
-                    {
-                        "desc" : "hide self",
-                        "type" : "control",
-                        "target" : "xui_ui_list81",
-                        "args" : [ ],
-                        "method" : "hide"
-                    }
-                ])
-            );
-            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
