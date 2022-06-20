@@ -33,56 +33,6 @@ xui.Class('App.Options', 'xui.Module',{
             );
             
             host.xui_ui_div19.append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_comboinput13")
-                .setLeft("1.6666666666666667em")
-                .setTop("1.6666666666666667em")
-                .setWidth("18.9375em")
-                .setHeight("4.5625em")
-                .setPlaceholder("Input here...")
-                .setLabelSize("2em")
-                .setLabelPos("top")
-                .setLabelCaption("Vessel Size")
-                .setLabelHAlign("left")
-                .setValue("What color do you prefer?")
-            );
-            
-            host.xui_ui_div19.append(
-                xui.create("xui.UI.Button")
-                .setHost(host,"xui_ui_button26")
-                .setLeft("22.5em")
-                .setTop("33.25em")
-                .setWidth("5em")
-                .setCaption("选项")
-                .setImageClass("fa fa-lg fa-plus")
-            );
-            
-            host.xui_ui_div19.append(
-                xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput203")
-                .setLeft("13.25em")
-                .setTop("42.416666666666664em")
-                .setWidth("15.833333333333334em")
-                .setHeight("1.8333333333333333em")
-                .setLabelSize("8em")
-                .setLabelCaption("过期时间")
-                .setType("counter")
-                .setUnit("分钟")
-                .setPrecision(0)
-                .setValue(10)
-            );
-            
-            host.xui_ui_div19.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label16")
-                .setLeft("1.875em")
-                .setTop("6.875em")
-                .setWidth("18.875em")
-                .setCaption("Set the options")
-                .setHAlign("left")
-            );
-            
-            host.xui_ui_div19.append(
                 xui.create("xui.UI.HTMLButton")
                 .setHost(host,"xui_ui_htmlbutton2")
                 .setLeft("5.933333333333334em")
@@ -109,20 +59,13 @@ xui.Class('App.Options', 'xui.Module',{
             
             host.xui_ui_div19.append(
                 xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input29")
-                .setLeft("4.666666666666667em")
-                .setTop("12em")
-            );
-            
-            host.xui_ui_div19.append(
-                xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input32")
                 .setHoverPop("xui_ui_list22")
-                .setLeft("22em")
-                .setTop("8.666666666666666em")
+                .setLeft("0.6em")
+                .setTop("2.6em")
                 .setWidth("18em")
                 .setLabelSize("8em")
-                .setLabelCaption("hover pop")
+                .setLabelCaption("Vessel Size")
             );
             
             append(
@@ -151,9 +94,9 @@ xui.Class('App.Options', 'xui.Module',{
                         "disabled" : true
                     }
                 ])
-                .setLeft("29.933333333333334em")
-                .setTop("9.933333333333334em")
-                .setVisibility("hidden")
+                .setLeft("29.866666666666667em")
+                .setTop("23.2em")
+                .setVisibility("visible")
                 .setValue("a")
                 .onItemSelected([
                     {
