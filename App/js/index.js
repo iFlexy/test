@@ -32,21 +32,25 @@ xui.Class('App', 'xui.Module',{
             );
             
             append(
-                xui.create("xui.UI.SVGPaper")
-                .setHost(host,"xui_ui_svgpaper1")
-                .setLeft("1.6666666666666667em")
-                .setTop("6.666666666666667em")
-                .setWidth("33.125em")
-                .setHeight("22.6875em")
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label144")
+                .setLeft("10.5em")
+                .setTop("2.6666666666666665em")
+                .setCaption("Survey Prototype")
+                .setCustomStyle({
+                    "KEY" : {
+                        "font-size" : "1.25em"
+                    }
+                })
             );
             
-            host.xui_ui_svgpaper1.append(
-                xui.create("xui.UI.Icon")
-                .setHost(host,"xui_ui_icon36")
-                .setLeft("1.6666666666666667em")
-                .setTop("2.0833333333333335em")
-                .setImageClass("fa fa-lg fa-user-plus")
-                .setIconFontSize("3em")
+            append(
+                xui.create("xui.UI.SVGPaper")
+                .setHost(host,"xui_ui_svgpaper1")
+                .setLeft("4.6em")
+                .setTop("6.6em")
+                .setWidth("33.125em")
+                .setHeight("22.6875em")
             );
             
             host.xui_ui_svgpaper1.append(
@@ -60,91 +64,10 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_svgpaper1.append(
                 xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label106")
-                .setLeft("6.666666666666667em")
-                .setTop("3.6875em")
-                .setCaption("Owenr")
-            );
-            
-            host.xui_ui_svgpaper1.append(
-                xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label107")
                 .setLeft("24.3125em")
                 .setTop("3.6875em")
                 .setCaption("Participants")
-            );
-            
-            host.xui_ui_svgpaper1.append(
-                xui.create("xui.svg.rectComb")
-                .setHost(host,"xui_svg_rectcomb1")
-                .setSvgTag("FlowChart:Process")
-                .setAttr({
-                    "KEY" : {
-                        "x" : 14,
-                        "y" : 140,
-                        "width" : 130,
-                        "height" : 40,
-                        "fill" : "90-#FF9A9A:0-#FF4040:50-#FF6767:100",
-                        "stroke" : "#004A7F",
-                        "cursor" : "pointer"
-                    },
-                    "TEXT" : {
-                        "text" : "Create a servey",
-                        "font-size" : "14px",
-                        "fill" : "#fff",
-                        "font-weight" : "bold",
-                        "cursor" : "pointer"
-                    }
-                })
-                .onClick([
-                    {
-                        "desc" : "Open",
-                        "type" : "page",
-                        "target" : "App.Frame",
-                        "args" : [
-                            {
-                                "ipage" : "post",
-                                "tab" : "post"
-                            }
-                        ],
-                        "method" : "open",
-                        "event" : 1
-                    }
-                ])
-            );
-            
-            host.xui_ui_svgpaper1.append(
-                xui.create("xui.svg.rectComb")
-                .setHost(host,"xui_svg_rectcomb3")
-                .setSvgTag("FlowChart:Process")
-                .setAttr({
-                    "KEY" : {
-                        "x" : 310,
-                        "y" : 140,
-                        "width" : 120,
-                        "height" : 40,
-                        "fill" : "90-#FF9A9A:0-#FF4040:50-#FF6767:100",
-                        "stroke" : "#004A7F",
-                        "cursor" : "pointer"
-                    },
-                    "TEXT" : {
-                        "text" : "Open it",
-                        "font-size" : "14px",
-                        "fill" : "#fff",
-                        "font-weight" : "bold",
-                        "cursor" : "pointer"
-                    }
-                })
-                .onClick([
-                    {
-                        "desc" : "Action 1",
-                        "type" : "page",
-                        "target" : "App.Options",
-                        "args" : [true],
-                        "method" : "switch",
-                        "event" : 1
-                    }
-                ])
             );
             
             host.xui_ui_svgpaper1.append(
@@ -161,36 +84,24 @@ xui.Class('App', 'xui.Module',{
             
             host.xui_ui_svgpaper1.append(
                 xui.create("xui.svg.rectComb")
-                .setHost(host,"xui_svg_rectcomb61")
+                .setHost(host,"xui_svg_rectcomb23")
                 .setSvgTag("FlowChart:Process")
                 .setAttr({
                     "KEY" : {
-                        "x" : 310,
-                        "y" : 260,
+                        "x" : 160,
+                        "y" : 140,
                         "width" : 120,
                         "height" : 40,
-                        "fill" : "#BA55D3",
-                        "stroke" : "#004A7F"
+                        "fill" : "90-#FF9A9A:0-#FF4040:50-#FF6767:100",
+                        "stroke" : "#004A7F",
+                        "cursor" : "pointer"
                     },
                     "TEXT" : {
-                        "text" : "Reply",
+                        "text" : "Open it",
                         "font-size" : "14px",
                         "fill" : "#fff",
-                        "font-weight" : "bold"
-                    }
-                })
-                .setShadow(false)
-            );
-            
-            append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label144")
-                .setLeft("10.5em")
-                .setTop("2.6666666666666665em")
-                .setCaption("Survey Prototype")
-                .setCustomStyle({
-                    "KEY" : {
-                        "font-size" : "1.25em"
+                        "font-weight" : "bold",
+                        "cursor" : "pointer"
                     }
                 })
             );
