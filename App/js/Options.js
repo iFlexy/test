@@ -56,7 +56,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput392")
                 .setLeft("10.666666666666666em")
-                .setTop("8.666666666666666em")
+                .setTop("10em")
                 .setWidth("19.333333333333332em")
                 .setLabelSize("8em")
                 .setLabelCaption("Vessel Size")
@@ -84,7 +84,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput429")
                 .setLeft("10.666666666666666em")
-                .setTop("14em")
+                .setTop("15.333333333333334em")
                 .setWidth("19.333333333333332em")
                 .setLabelSize("8em")
                 .setLabelCaption("Sheath Size")
@@ -122,7 +122,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput448")
                 .setLeft("10.666666666666666em")
-                .setTop("19.333333333333332em")
+                .setTop("20.666666666666668em")
                 .setWidth("19.333333333333332em")
                 .setLabelSize("8em")
                 .setLabelCaption("Arterial Bifurcation")
@@ -145,7 +145,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput455")
                 .setLeft("10.666666666666666em")
-                .setTop("24.666666666666668em")
+                .setTop("26em")
                 .setWidth("19.333333333333332em")
                 .setLabelSize("8em")
                 .setLabelCaption("Inguinal Ligament Location")
@@ -168,7 +168,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput460")
                 .setLeft("10.666666666666666em")
-                .setTop("29.333333333333332em")
+                .setTop("30.666666666666668em")
                 .setWidth("19.333333333333332em")
                 .setLabelSize("8em")
                 .setLabelCaption("Calcification of Vessel")
@@ -191,7 +191,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput476")
                 .setLeft("10.666666666666666em")
-                .setTop("34em")
+                .setTop("35.333333333333336em")
                 .setWidth("19.333333333333332em")
                 .setLabelSize("8em")
                 .setLabelCaption("Medications")
@@ -219,7 +219,7 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput489")
                 .setLeft("10.666666666666666em")
-                .setTop("4em")
+                .setTop("5.333333333333333em")
                 .setWidth("19.333333333333332em")
                 .setLabelSize("8em")
                 .setLabelCaption("Type of Vessel")
@@ -241,6 +241,28 @@ xui.Class('App.Options', 'xui.Module',{
                         "imageClass" : "xui-icon-number3"
                     }
                 ])
+            );
+            
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label19")
+                .setSpaceUnit("px")
+                .setLeft("130px")
+                .setTop("20px")
+                .setWidth("334px")
+                .setHeight("47px")
+                .setCaption("Angiorithm")
+                .setHAlign("center")
+                .setCustomStyle({
+                    "KEY" : {
+                        "color" : "#4B0082",
+                        "font-family" : "comic sans ms,cursive",
+                        "font-size" : "2em",
+                        "font-weight" : "bold",
+                        "text-shadow" : "0px 0px 9px #DA70D6",
+                        "opacity" : 0.8
+                    }
+                })
             );
             
             append(
