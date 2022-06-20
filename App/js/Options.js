@@ -25,8 +25,8 @@ xui.Class('App.Options', 'xui.Module',{
                 .setHost(host,"xui_ui_div19")
                 .setShowEffects("Blur")
                 .setHideEffects("Blur")
-                .setLeft("0em")
-                .setTop("0em")
+                .setLeft("-0.06666666666666667em")
+                .setTop("-0.06666666666666667em")
                 .setWidth("39.86666666666667em")
                 .setHeight("63.8em")
                 .setOverflow("hidden")
@@ -35,8 +35,8 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.HTMLButton")
                 .setHost(host,"xui_ui_htmlbutton2")
-                .setLeft("12.6em")
-                .setTop("38.6em")
+                .setLeft("12em")
+                .setTop("29.333333333333332em")
                 .setWidth("13.125em")
                 .setHeight("2.5em")
                 .setCaption("Submit")
@@ -44,14 +44,9 @@ xui.Class('App.Options', 'xui.Module',{
                     {
                         "desc" : "Action 1",
                         "type" : "other",
-                        "target" : "callback",
-                        "args" : [
-                            {
-                                "tab" : "receive",
-                                "ipage" : "receive"
-                            }
-                        ],
-                        "method" : "setFI",
+                        "target" : "msg",
+                        "args" : [ ],
+                        "method" : "pop",
                         "event" : 1
                     }
                 ])
@@ -77,6 +72,17 @@ xui.Class('App.Options', 'xui.Module',{
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Sheath Size")
+            );
+            
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input60")
+                .setHoverPop("xui_ui_list43")
+                .setLeft("2em")
+                .setTop("10.666666666666666em")
+                .setWidth("19.333333333333332em")
+                .setLabelSize("8em")
+                .setLabelCaption("Arterial Bifurcation")
             );
             
             append(
@@ -163,6 +169,48 @@ xui.Class('App.Options', 'xui.Module',{
                 .setTop("7.933333333333334em")
                 .setHeight("11em")
                 .setVisibility("hidden")
+                .setValue("a")
+                .onItemSelected([
+                    {
+                        "desc" : "set value",
+                        "type" : "control",
+                        "target" : "xui_ui_input41",
+                        "args" : [
+                            "{page.xui_ui_input41.setUIValue()}"
+                        ],
+                        "method" : "setUIValue",
+                        "event" : 2,
+                        "redirection" : "other:callback:call"
+                    },
+                    {
+                        "desc" : "hide self",
+                        "type" : "control",
+                        "target" : "xui_ui_list43",
+                        "args" : [ ],
+                        "method" : "hide"
+                    }
+                ])
+            );
+            
+            append(
+                xui.create("xui.UI.List")
+                .setHost(host,"xui_ui_list70")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "Above",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "Below",
+                        "imageClass" : "xui-icon-number2"
+                    }
+                ])
+                .setLeft("8.6em")
+                .setTop("11.933333333333334em")
+                .setHeight("11em")
+                .setVisibility("visible")
                 .setValue("a")
                 .onItemSelected([
                     {
