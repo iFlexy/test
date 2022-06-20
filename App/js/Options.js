@@ -35,11 +35,11 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.HTMLButton")
                 .setHost(host,"xui_ui_htmlbutton2")
-                .setLeft("5.933333333333334em")
-                .setTop("35.93333333333333em")
+                .setLeft("12.6em")
+                .setTop("38.6em")
                 .setWidth("13.125em")
                 .setHeight("2.5em")
-                .setCaption("Send to participants")
+                .setCaption("Submit")
                 .onClick([
                     {
                         "desc" : "Action 1",
