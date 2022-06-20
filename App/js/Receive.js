@@ -21,198 +21,254 @@ xui.Class('App.Receive', 'xui.Module',{
             var host=this, children=[], append=function(child){children.push(child.get(0));};
             
             append(
-                xui.create("xui.UI.Div")
-                .setHost(host,"xui_ui_div104")
-                .setShowEffects("Blur")
-                .setHideEffects("Blur")
+                xui.create("xui.UI.TreeGrid")
+                .setHost(host,"xui_ui_treegrid11")
                 .setLeft("0em")
                 .setTop("0em")
-                .setWidth("22em")
-                .setHeight("30em")
-                .setOverflow("hidden")
+                .setEditable(true)
+                .setRowHandler(false)
+                .setHeader([
+                    {
+                        "id" : "label",
+                        "type" : "label",
+                        "width" : "8em",
+                        "caption" : "VCDs"
+                    },
+                    {
+                        "id" : "input",
+                        "type" : "input",
+                        "width" : "8em",
+                        "caption" : "Vessels"
+                    },
+                    {
+                        "id" : "combobox",
+                        "type" : "combobox",
+                        "width" : "8em",
+                        "caption" : "Vessel Size"
+                    },
+                    {
+                        "id" : "listbox",
+                        "type" : "listbox",
+                        "width" : "8em",
+                        "caption" : "Sheath Size"
+                    },
+                    {
+                        "id" : "getter",
+                        "type" : "getter",
+                        "width" : "8em",
+                        "caption" : "getter"
+                    },
+                    {
+                        "id" : "cmdbox",
+                        "type" : "cmdbox",
+                        "width" : "8em",
+                        "caption" : "cmdbox"
+                    },
+                    {
+                        "id" : "popbox",
+                        "type" : "popbox",
+                        "width" : "8em",
+                        "caption" : "popbox"
+                    },
+                    {
+                        "id" : "date",
+                        "type" : "date",
+                        "width" : "8em",
+                        "caption" : "date"
+                    },
+                    {
+                        "id" : "time",
+                        "type" : "time",
+                        "width" : "8em",
+                        "caption" : "time"
+                    },
+                    {
+                        "id" : "datetime",
+                        "type" : "datetime",
+                        "width" : "8em",
+                        "caption" : "datetime"
+                    },
+                    {
+                        "id" : "color",
+                        "type" : "color",
+                        "width" : "8em",
+                        "caption" : "color"
+                    },
+                    {
+                        "id" : "spin",
+                        "type" : "spin",
+                        "width" : "8em",
+                        "caption" : "spin"
+                    },
+                    {
+                        "id" : "counter",
+                        "type" : "counter",
+                        "width" : "8em",
+                        "caption" : "counter"
+                    },
+                    {
+                        "id" : "currency",
+                        "type" : "currency",
+                        "width" : "8em",
+                        "caption" : "currency"
+                    },
+                    {
+                        "id" : "number",
+                        "type" : "number",
+                        "width" : "8em",
+                        "caption" : "number"
+                    }
+                ])
+                .setRows([
+                    {
+                        "cells" : [
+                            {
+                                "value" : "label1"
+                            },
+                            {
+                                "value" : "input1"
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : "2022-06-20 22:06:44"
+                            },
+                            {
+                                "value" : "00:00"
+                            },
+                            {
+                                "value" : "2022-06-20 22:06:44"
+                            },
+                            {
+                                "value" : "#FFFFFF"
+                            },
+                            {
+                                "value" : 12
+                            },
+                            {
+                                "value" : 12
+                            },
+                            {
+                                "value" : 23.44
+                            },
+                            {
+                                "value" : 43.23
+                            }
+                        ]
+                    },
+                    {
+                        "cells" : [
+                            {
+                                "value" : "label2"
+                            },
+                            {
+                                "value" : "input2"
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : "2022-06-20 22:06:44"
+                            },
+                            {
+                                "value" : "02:00"
+                            },
+                            {
+                                "value" : "2022-06-20 22:06:44"
+                            },
+                            {
+                                "value" : "#F0F0F0"
+                            },
+                            {
+                                "value" : 0.13
+                            },
+                            {
+                                "value" : 0.13
+                            },
+                            {
+                                "value" : 123
+                            },
+                            {
+                                "value" : 56.32
+                            }
+                        ]
+                    },
+                    {
+                        "cells" : [
+                            {
+                                "value" : "label3"
+                            },
+                            {
+                                "value" : "input3"
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : "2022-06-20 22:06:44"
+                            },
+                            {
+                                "value" : "03:00"
+                            },
+                            {
+                                "value" : "2022-06-20 22:06:44"
+                            },
+                            {
+                                "value" : "#0F0F0F"
+                            },
+                            {
+                                "value" : 0.14
+                            },
+                            {
+                                "value" : 0.14
+                            },
+                            {
+                                "value" : 233.55
+                            },
+                            {
+                                "value" : 43.53
+                            }
+                        ]
+                    }
+                ])
             );
-            
-            host.xui_ui_div104.append(
-                xui.create("xui.UI.Button")
-                .setHost(host,"xui_ui_button22")
-                .setDirtyMark(false)
-                .setLeft("9.916666666666666em")
-                .setTop("38.25em")
-                .setWidth("11.5em")
-                .setHeight("2.8333333333333335em")
-                .setCaption("邀 请 好 友 来 参 谋")
-                .onClick([
-                    {
-                        "desc":"Action 1",
-                        "type":"other",
-                        "target":"callback",
-                        "args":[
-                            {
-                                "ipage":"status_from",
-                                "tab":"home"
-                            }
-                        ],
-                        "method":"setFI",
-                        "event":1
-                    }
-                ])
-                );
-            
-            host.xui_ui_div104.append(
-                xui.create("xui.UI.Button")
-                .setHost(host,"xui_ui_button23")
-                .setDirtyMark(false)
-                .setLeft("22.5em")
-                .setTop("33.25em")
-                .setWidth("5em")
-                .setImageClass("fa fa-lg fa-plus")
-                .setCaption("选项")
-                );
-            
-            host.xui_ui_div104.append(
-                xui.create("xui.UI.Block")
-                .setHost(host,"xui_ui_block45")
-                .setLeft("1.6666666666666667em")
-                .setTop("8.75em")
-                .setWidth("18.9375em")
-                .setHeight("8.125em")
-                .setBorderType("flat")
-                .setBackground("#FFFFFF")
-                .setOverflow("hidden")
-                );
-            
-            host.xui_ui_block45.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label49")
-                .setLeft("1.6666666666666667em")
-                .setTop("0.8333333333333334em")
-                .setWidth("5.666666666666667em")
-                .setCaption("Blue")
-                .setHAlign("left")
-                );
-            
-            host.xui_ui_block45.append(
-                xui.create("xui.UI.HTMLButton")
-                .setHost(host,"xui_ui_htmlbutton7")
-                .setLeft("3.6875em")
-                .setTop("4.125em")
-                .setWidth("13.125em")
-                .setHeight("2.5em")
-                .setHtml("I pick option 1")
-                .onClick([
-                    {
-                        "desc":"Action 1",
-                        "type":"other",
-                        "target":"callback",
-                        "args":[
-                            {
-                                "tab":"receive",
-                                "ipage":"chart"
-                            }
-                        ],
-                        "method":"setFI",
-                        "event":1
-                    }
-                ])
-                );
-            
-            host.xui_ui_div104.append(
-                xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput1250")
-                .setDirtyMark(false)
-                .setLeft("13.25em")
-                .setTop("42.416666666666664em")
-                .setWidth("15.833333333333334em")
-                .setHeight("1.8333333333333333em")
-                .setLabelSize("8em")
-                .setLabelCaption("过期时间")
-                .setType("counter")
-                .setUnit("分钟")
-                .setPrecision(0)
-                .setValue(10)
-                );
-            
-            host.xui_ui_div104.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label50")
-                .setLeft("1.875em")
-                .setTop("6.875em")
-                .setWidth("18.875em")
-                .setCaption("Choose one please")
-                .setHAlign("left")
-                );
-            
-            host.xui_ui_div104.append(
-                xui.create("xui.UI.Block")
-                .setHost(host,"xui_ui_block46")
-                .setLeft("1.6875em")
-                .setTop("17.5em")
-                .setWidth("18.9375em")
-                .setHeight("7.5em")
-                .setBorderType("flat")
-                .setBackground("#FFFFFF")
-                .setOverflow("hidden")
-                );
-            
-            host.xui_ui_block46.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label51")
-                .setLeft("1.6666666666666667em")
-                .setTop("0.8333333333333334em")
-                .setWidth("5.666666666666667em")
-                .setCaption("Red")
-                .setHAlign("left")
-                );
-            
-            host.xui_ui_block46.append(
-                xui.create("xui.UI.HTMLButton")
-                .setHost(host,"xui_ui_htmlbutton8")
-                .setLeft("3.75em")
-                .setTop("3.5em")
-                .setWidth("13.125em")
-                .setHeight("2.5em")
-                .setHtml("I pick option 2")
-                .onClick([
-                    {
-                        "desc":"Action 1",
-                        "type":"other",
-                        "target":"callback",
-                        "args":[
-                            {
-                                "tab":"receive",
-                                "ipage":"chart"
-                            }
-                        ],
-                        "method":"setFI",
-                        "event":1
-                    }
-                ])
-                );
-            
-            host.xui_ui_div104.append(
-                xui.create("xui.UI.Label")
-                .setHost(host,"xui_ui_label55")
-                .setLeft("2.1666666666666665em")
-                .setTop("2.6666666666666665em")
-                .setWidth("15.15em")
-                .setHeight("1.45em")
-                .setCaption("What color do you prefer?")
-                .setHAlign("left")
-                .setCustomStyle({
-                    "KEY":{
-                        "font-size":"1.25em"
-                    }
-                })
-                );
-            
-            host.xui_ui_div104.append(
-                xui.create("xui.UI.Block")
-                .setHost(host,"xui_ui_block50")
-                .setLeft("0.625em")
-                .setTop("5.25em")
-                .setWidth("20em")
-                .setHeight("0em")
-                );
             
             return children;
             // ]]Code created by CrossUI RAD Studio
