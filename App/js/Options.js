@@ -54,21 +54,10 @@ xui.Class('App.Options', 'xui.Module',{
             
             host.xui_ui_div19.append(
                 xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input32")
-                .setHoverPop("xui_ui_list22")
-                .setLeft("0.6em")
-                .setTop("2.6em")
-                .setWidth("18em")
-                .setLabelSize("8em")
-                .setLabelCaption("Vessel Size")
-            );
-            
-            host.xui_ui_div19.append(
-                xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input41")
                 .setHoverPop("xui_ui_list43")
-                .setLeft("0.6em")
-                .setTop("6.6em")
+                .setLeft("8.666666666666666em")
+                .setTop("16.666666666666668em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Sheath Size")
@@ -78,8 +67,8 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input60")
                 .setHoverPop("xui_ui_list70")
-                .setLeft("2em")
-                .setTop("10.666666666666666em")
+                .setLeft("10.066666666666666em")
+                .setTop("20.733333333333334em")
                 .setWidth("19.333333333333332em")
                 .setLabelSize("8em")
                 .setLabelCaption("Arterial Bifurcation")
@@ -89,8 +78,8 @@ xui.Class('App.Options', 'xui.Module',{
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input67")
                 .setHoverPop("xui_ui_list81")
-                .setLeft("2em")
-                .setTop("14.666666666666666em")
+                .setLeft("10.066666666666666em")
+                .setTop("24.733333333333334em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("Inguinal Ligament Location")
@@ -98,12 +87,12 @@ xui.Class('App.Options', 'xui.Module',{
             
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput364")
-                .setLeft("5.333333333333333em")
-                .setTop("22.666666666666668em")
+                .setHost(host,"xui_ui_comboinput392")
+                .setLeft("10.666666666666666em")
+                .setTop("8.666666666666666em")
                 .setWidth("18em")
                 .setLabelSize("8em")
-                .setLabelCaption("Drop List Input")
+                .setLabelCaption("Vessel Size")
                 .setType("listbox")
                 .setItems([
                     {
@@ -132,7 +121,7 @@ xui.Class('App.Options', 'xui.Module',{
                     {
                         "desc" : "Action 1",
                         "type" : "control",
-                        "target" : "xui_ui_list108",
+                        "target" : "xui_ui_list22",
                         "args" : [ ],
                         "method" : "show",
                         "event" : 1
@@ -160,8 +149,8 @@ xui.Class('App.Options', 'xui.Module',{
                         "imageClass" : "xui-icon-number3"
                     }
                 ])
-                .setLeft("8.6em")
-                .setTop("3.933333333333333em")
+                .setLeft("18.6em")
+                .setTop("9.933333333333334em")
                 .setHeight("7em")
                 .setVisibility("hidden")
                 .setValue("a")
@@ -169,16 +158,16 @@ xui.Class('App.Options', 'xui.Module',{
                     {
                         "desc" : "set value",
                         "type" : "control",
-                        "target" : "xui_ui_input32",
+                        "target" : "xui_ui_comboinput392",
                         "args" : [
-                            "{page.xui_ui_input32.setUIValue()}",
+                            "{page.xui_ui_comboinput392.setUIValue()}",
                             undefined,
                             undefined,
-                            "{args[1] caption}"
+                            "{args[1]caption}"
                         ],
                         "method" : "setUIValue",
-                        "redirection" : "other:callback:call",
-                        "event" : 2
+                        "event" : 2,
+                        "redirection" : "other:callback:call"
                     },
                     {
                         "desc" : "hide self",
@@ -334,66 +323,6 @@ xui.Class('App.Options', 'xui.Module',{
                         "desc" : "hide self",
                         "type" : "control",
                         "target" : "xui_ui_list81",
-                        "args" : [ ],
-                        "method" : "hide"
-                    }
-                ])
-            );
-            
-            append(
-                xui.create("xui.UI.List")
-                .setHost(host,"xui_ui_list108")
-                .setItems([
-                    {
-                        "id" : "a",
-                        "caption" : "5 Fr",
-                        "imageClass" : "xui-icon-number1"
-                    },
-                    {
-                        "id" : "b",
-                        "caption" : "6 Fr",
-                        "imageClass" : "xui-icon-number2"
-                    },
-                    {
-                        "id" : "c",
-                        "caption" : "7 Fr",
-                        "imageClass" : "xui-icon-number3"
-                    },
-                    {
-                        "id" : "d",
-                        "caption" : "8 Fr",
-                        "imageClass" : "xui-icon-number4"
-                    },
-                    {
-                        "id" : "e",
-                        "caption" : "> 8 Fr",
-                        "imageClass" : "xui-icon-number5"
-                    }
-                ])
-                .setLeft("13.266666666666667em")
-                .setTop("23.933333333333334em")
-                .setHeight("11em")
-                .setVisibility("hidden")
-                .setValue("a")
-                .onItemSelected([
-                    {
-                        "desc" : "set value",
-                        "type" : "control",
-                        "target" : "xui_ui_comboinput364",
-                        "args" : [
-                            "{page.xui_ui_comboinput364.setUIValue()}",
-                            undefined,
-                            undefined,
-                            "{args[1]caption}"
-                        ],
-                        "method" : "setUIValue",
-                        "event" : 2,
-                        "redirection" : "other:callback:call"
-                    },
-                    {
-                        "desc" : "hide self",
-                        "type" : "control",
-                        "target" : "xui_ui_list108",
                         "args" : [ ],
                         "method" : "hide"
                     }
