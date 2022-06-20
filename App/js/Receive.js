@@ -123,7 +123,7 @@ xui.Class('App.Receive', 'xui.Module',{
                     {
                         "cells" : [
                             {
-                                "value" : "label1"
+                                "value" : "AngioSeal"
                             },
                             {
                                 "value" : "input1"
@@ -172,7 +172,7 @@ xui.Class('App.Receive', 'xui.Module',{
                     {
                         "cells" : [
                             {
-                                "value" : "label2"
+                                "value" : "StarClose"
                             },
                             {
                                 "value" : "input2"
@@ -221,7 +221,7 @@ xui.Class('App.Receive', 'xui.Module',{
                     {
                         "cells" : [
                             {
-                                "value" : "label3"
+                                "value" : "CELT"
                             },
                             {
                                 "value" : "input3"
@@ -264,6 +264,104 @@ xui.Class('App.Receive', 'xui.Module',{
                             },
                             {
                                 "value" : 43.53
+                            }
+                        ]
+                    },
+                    {
+                        "cells" : [
+                            {
+                                "value" : "MynxAce"
+                            },
+                            {
+                                "value" : "input4"
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : "2022-06-20 22:06:44"
+                            },
+                            {
+                                "value" : "02:00"
+                            },
+                            {
+                                "value" : "2022-06-20 22:06:44"
+                            },
+                            {
+                                "value" : "#F0F0F0"
+                            },
+                            {
+                                "value" : 0.13
+                            },
+                            {
+                                "value" : 0.13
+                            },
+                            {
+                                "value" : 123
+                            },
+                            {
+                                "value" : 56.32
+                            }
+                        ]
+                    },
+                    {
+                        "cells" : [
+                            {
+                                "value" : "ProGlide"
+                            },
+                            {
+                                "value" : "input5"
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : ""
+                            },
+                            {
+                                "value" : "2022-06-20 22:06:44"
+                            },
+                            {
+                                "value" : "02:00"
+                            },
+                            {
+                                "value" : "2022-06-20 22:06:44"
+                            },
+                            {
+                                "value" : "#F0F0F0"
+                            },
+                            {
+                                "value" : 0.13
+                            },
+                            {
+                                "value" : 0.13
+                            },
+                            {
+                                "value" : 123
+                            },
+                            {
+                                "value" : 56.32
                             }
                         ]
                     }
