@@ -249,7 +249,9 @@ xui.Class('App.Options', 'xui.Module',{
                 .setWidth("13.125em")
                 .setHeight("2.5em")
                 .setCaption("Submit")
-                .onClick("_submit_onclick")
+                .onClick([
+                    "_submit_onclick"
+                ])
             );
             
             host.xui_ui_div19.append(
