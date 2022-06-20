@@ -23,78 +23,14 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label144")
-                .setLeft("10.613333333333333em")
-                .setTop("3.68em")
+                .setLeft("11.146666666666667em")
+                .setTop("6.88em")
                 .setCaption("Angiorithm Prototype")
                 .setCustomStyle({
                     "KEY" : {
                         "font-size" : "1.25em"
                     }
                 })
-            );
-            
-            append(
-                xui.create("xui.UI.SVGPaper")
-                .setHost(host,"xui_ui_svgpaper1")
-                .setLeft("1.9333333333333333em")
-                .setTop("16.6em")
-                .setWidth("33.125em")
-                .setHeight("22.6875em")
-            );
-            
-            host.xui_ui_svgpaper1.append(
-                xui.create("xui.UI.Icon")
-                .setHost(host,"xui_ui_icon37")
-                .setLeft("13.333333333333334em")
-                .setTop("4em")
-                .setImageClass("fa fa-lg fa-users")
-                .setIconFontSize("3em")
-            );
-            
-            host.xui_ui_svgpaper1.append(
-                xui.create("xui.svg.path")
-                .setHost(host,"xui_svg_path1")
-                .setSvgTag("Shapes:Line")
-                .setAttr({
-                    "path" : "M,230,5L,230,340",
-                    "stroke" : "#004A7F",
-                    "fill" : "#ffffff",
-                    "stroke-dasharray" : "-."
-                })
-            );
-            
-            host.xui_ui_svgpaper1.append(
-                xui.create("xui.svg.rectComb")
-                .setHost(host,"xui_svg_rectcomb23")
-                .setSvgTag("FlowChart:Process")
-                .setAttr({
-                    "KEY" : {
-                        "x" : 170,
-                        "y" : 140,
-                        "width" : 120,
-                        "height" : 40,
-                        "fill" : "90-#FF9A9A:0-#FF4040:50-#FF6767:100",
-                        "stroke" : "#004A7F",
-                        "cursor" : "pointer"
-                    },
-                    "TEXT" : {
-                        "text" : "Open it",
-                        "font-size" : "14px",
-                        "fill" : "#fff",
-                        "font-weight" : "bold",
-                        "cursor" : "pointer"
-                    }
-                })
-                .onClick([
-                    {
-                        "desc" : "Action 1",
-                        "type" : "page",
-                        "target" : "App.Options",
-                        "args" : [true],
-                        "method" : "switch",
-                        "event" : 1
-                    }
-                ])
             );
             
             append(
@@ -111,8 +47,8 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button10")
-                .setLeft("14.6em")
-                .setTop("9.933333333333334em")
+                .setLeft("15.933333333333334em")
+                .setTop("15.266666666666667em")
                 .setWidth("6.933333333333334em")
                 .setHeight("2.6em")
                 .setCaption("Open it")
