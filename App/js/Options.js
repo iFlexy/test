@@ -269,9 +269,14 @@ xui.Class('App.Options', 'xui.Module',{
                         "event" : 1,
                         "conditions" : [
                             {
-                                "left" : "{page.xui_ui_comboinput476.getValue()}, {page.xui_ui_comboinput460.getUnit()}",
+                                "left" : "{page.xui_ui_comboinput476.getValue()}",
                                 "symbol" : "=",
                                 "right" : "a"
+                            },
+                            {
+                                "left" : "{page.xui_ui_comboinput460.getUnit()}",
+                                "symbol" : "=",
+                                "right" : "b"
                             }
                         ]
                     },
