@@ -258,12 +258,23 @@ xui.Class('App.Options', 'xui.Module',{
                 .setCaption("Submit")
                 .onClick([
                     {
+                        "desc" : "Action 3",
+                        "type" : "control",
+                        "target" : "xui_ui_comboinput476",
+                        "args" : [
+                            "{page.xui_ui_comboinput476.getUIValue()}"
+                        ],
+                        "method" : "getUIValue",
+                        "redirection" : "other:callback:call",
+                        "event" : 1
+                    },
+                    {
                         "desc" : "Action 2",
                         "type" : "other",
                         "target" : "msg",
                         "args" : [
                             "Angiorithm",
-                            "{temp.koData}"
+                            "Input"
                         ],
                         "method" : "alert",
                         "event" : 1,
