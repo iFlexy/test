@@ -259,30 +259,19 @@ xui.Class('App.Options', 'xui.Module',{
                 .onClick([
                     {
                         "desc" : "Action 3",
-                        "type" : "control",
-                        "target" : "xui_ui_comboinput476",
-                        "args" : [
-                            "{page.xui_ui_comboinput476.getUIValue()}"
-                        ],
-                        "method" : "getUIValue",
-                        "event" : 1,
-                        "redirection" : "other:callback:call"
-                    },
-                    {
-                        "desc" : "Action 2",
                         "type" : "other",
                         "target" : "msg",
                         "args" : [
-                            "Angiorithm",
-                            "Input"
+                            "",
+                            "Good"
                         ],
                         "method" : "pop",
                         "event" : 1,
                         "conditions" : [
                             {
-                                "left" : "{page.xui_ui_comboinput476}",
-                                "symbol" : "empty",
-                                "right" : ""
+                                "left" : "{page.xui_ui_comboinput448}",
+                                "symbol" : "include",
+                                "right" : "Yes"
                             }
                         ]
                     },
@@ -316,30 +305,6 @@ xui.Class('App.Options', 'xui.Module',{
             
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput105")
-                .setRequired(true)
-                .setLeft("2em")
-                .setTop("51.333333333333336em")
-                .setWidth("30em")
-                .setLabelSize("17em")
-                .setLabelCaption("International Normalised Ratio (INR)")
-                .setType("listbox")
-                .setItems([
-                    {
-                        "id" : "a",
-                        "caption" : "≤1.5",
-                        "imageClass" : "xui-icon-number1"
-                    },
-                    {
-                        "id" : "b",
-                        "caption" : ">1.5",
-                        "imageClass" : "xui-icon-number2"
-                    }
-                ])
-            );
-            
-            host.xui_ui_div19.append(
-                xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput76")
                 .setRequired(true)
                 .setLeft("6.666666666666667em")
@@ -357,6 +322,30 @@ xui.Class('App.Options', 'xui.Module',{
                     {
                         "id" : "b",
                         "caption" : "No",
+                        "imageClass" : "xui-icon-number2"
+                    }
+                ])
+            );
+            
+            host.xui_ui_div19.append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput105")
+                .setRequired(true)
+                .setLeft("2em")
+                .setTop("51.333333333333336em")
+                .setWidth("30em")
+                .setLabelSize("17em")
+                .setLabelCaption("International Normalised Ratio (INR)")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "≤1.5",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : ">1.5",
                         "imageClass" : "xui-icon-number2"
                     }
                 ])
