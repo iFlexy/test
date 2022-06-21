@@ -269,7 +269,7 @@ xui.Class('App.Options', 'xui.Module',{
                         "event" : 1,
                         "conditions" : [
                             {
-                                "left" : "{page.xui_ui_comboinput476}",
+                                "left" : "{page.xui_ui_comboinput476.getValue()}",
                                 "symbol" : "=",
                                 "right" : "a"
                             }
