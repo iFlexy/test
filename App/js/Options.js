@@ -277,6 +277,11 @@ xui.Class('App.Options', 'xui.Module',{
                                 "left" : "{page.xui_ui_comboinput460.getUnit()}",
                                 "symbol" : "=",
                                 "right" : "b"
+                            },
+                            {
+                                "left" : "{page.xui_ui_comboinput76.getValue()}",
+                                "symbol" : "=",
+                                "right" : "a"
                             }
                         ]
                     },
