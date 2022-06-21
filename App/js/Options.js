@@ -271,7 +271,7 @@ xui.Class('App.Options', 'xui.Module',{
                             {
                                 "left" : "{page.xui_ui_comboinput476}",
                                 "symbol" : "=",
-                                "right" : "Yes"
+                                "right" : "a"
                             }
                         ]
                     },
