@@ -57,6 +57,7 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput489")
+                .setRequired(true)
                 .setLeft("10.666666666666666em")
                 .setTop("6.666666666666667em")
                 .setWidth("19.333333333333332em")
@@ -85,6 +86,7 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput392")
+                .setRequired(true)
                 .setLeft("10.666666666666666em")
                 .setTop("11.333333333333334em")
                 .setWidth("19.333333333333332em")
@@ -113,6 +115,7 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput429")
+                .setRequired(true)
                 .setLeft("10.666666666666666em")
                 .setTop("16.666666666666668em")
                 .setWidth("19.333333333333332em")
@@ -151,6 +154,7 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput448")
+                .setRequired(true)
                 .setLeft("10em")
                 .setTop("22em")
                 .setWidth("20em")
@@ -175,6 +179,7 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput455")
+                .setRequired(true)
                 .setLeft("6em")
                 .setTop("27.333333333333332em")
                 .setWidth("24em")
@@ -198,6 +203,7 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput460")
+                .setRequired(true)
                 .setLeft("8.666666666666666em")
                 .setTop("32em")
                 .setWidth("21.333333333333332em")
@@ -221,6 +227,7 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput476")
+                .setRequired(true)
                 .setLeft("6.666666666666667em")
                 .setTop("36.666666666666664em")
                 .setWidth("23.333333333333332em")
@@ -257,6 +264,7 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput100")
+                .setRequired(true)
                 .setLeft("4.666666666666667em")
                 .setTop("46em")
                 .setWidth("25.333333333333332em")
@@ -280,6 +288,7 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput105")
+                .setRequired(true)
                 .setLeft("2em")
                 .setTop("51.333333333333336em")
                 .setWidth("28em")
@@ -303,6 +312,7 @@ xui.Class('App.Options', 'xui.Module',{
             host.xui_ui_div19.append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput76")
+                .setRequired(true)
                 .setLeft("6.666666666666667em")
                 .setTop("41.333333333333336em")
                 .setWidth("23.333333333333332em")
