@@ -257,6 +257,17 @@ xui.Class('App.Options', 'xui.Module',{
                 .setHeight("2.5em")
                 .setCaption("Submit")
                 .onClick([
+                    {
+                        "desc" : "Action 2",
+                        "type" : "other",
+                        "target" : "msg",
+                        "args" : [
+                            undefined,
+                            "page.xui_ui_comboinput489"
+                        ],
+                        "method" : "pop",
+                        "event" : 1
+                    },
                     "_submit_onclick"
                 ])
             );
