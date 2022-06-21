@@ -281,7 +281,7 @@ xui.Class('App.Options', 'xui.Module',{
                         "conditions" : [
                             {
                                 "left" : "{page.xui_ui_comboinput476}",
-                                "symbol" : "undefined",
+                                "symbol" : "empty",
                                 "right" : ""
                             }
                         ],
