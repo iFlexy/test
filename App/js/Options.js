@@ -265,8 +265,8 @@ xui.Class('App.Options', 'xui.Module',{
                             "{page.xui_ui_comboinput476.getUIValue()}"
                         ],
                         "method" : "getUIValue",
-                        "redirection" : "other:callback:call",
-                        "event" : 1
+                        "event" : 1,
+                        "redirection" : "other:callback:call"
                     },
                     {
                         "desc" : "Action 2",
@@ -276,7 +276,7 @@ xui.Class('App.Options', 'xui.Module',{
                             "Angiorithm",
                             "Input"
                         ],
-                        "method" : "alert",
+                        "method" : "pop",
                         "event" : 1,
                         "conditions" : [
                             {
@@ -284,8 +284,7 @@ xui.Class('App.Options', 'xui.Module',{
                                 "symbol" : "empty",
                                 "right" : ""
                             }
-                        ],
-                        "onOK" : 2
+                        ]
                     },
                     "_submit_onclick"
                 ])
