@@ -270,7 +270,7 @@ xui.Class('App.Options', 'xui.Module',{
                         "conditions" : [
                             {
                                 "left" : "{page.xui_ui_comboinput476.getValue()}",
-                                "symbol" : "include",
+                                "symbol" : "=",
                                 "right" : "Yes"
                             }
                         ]
