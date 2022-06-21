@@ -259,24 +259,22 @@ xui.Class('App.Options', 'xui.Module',{
                 .onClick([
                     {
                         "desc" : "Action 2",
-                        "type" : "control",
-                        "target" : "xui_ui_comboinput489",
-                        "args" : [
-                            "{page.xui_ui_comboinput489.getUIValue()}"
-                        ],
-                        "method" : "getUIValue",
-                        "event" : 1,
-                        "redirection" : "other:callback:call"
-                    },
-                    {
-                        "desc" : "Action 3",
                         "type" : "other",
                         "target" : "msg",
                         "args" : [
-                            undefined,
-                            "{page.xui_ui_comboinput489.serialize()}"
+                            "Angiorithm",
+                            "{temp.koData}"
                         ],
-                        "method" : "pop"
+                        "method" : "alert",
+                        "event" : 1,
+                        "conditions" : [
+                            {
+                                "left" : "{page.xui_ui_comboinput476}",
+                                "symbol" : "undefined",
+                                "right" : ""
+                            }
+                        ],
+                        "onOK" : 2
                     },
                     "_submit_onclick"
                 ])
